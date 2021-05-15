@@ -1,0 +1,58 @@
+
+main form#sangdam { width: 100%;}
+div#popuplayer>div p,
+div#popuplayer>div>p>button { font-size: 0.8rem;}
+header>table>tbody>tr>td.nav{ display:none;}
+header>table>tbody>tr>td.hamberger { display: initial;}
+main div.fourimg>div {
+  width: 50%;
+}
+
+.mobilehidden {
+  display:none;
+}
+main .fleft,
+main .fright { float: none;}
+main div.imgs>div {
+  width: 100%;
+  margin-bottom: 2em;
+}
+div.qmenu>div.box-group {
+	display: table-row;
+}
+main div#calendar { overflow-x: scroll;}
+main table#board { width: 100%;}
+main table#board>thead th:nth-child(1),
+main table#board>thead th:nth-child(4),
+main table#board>tbody td:nth-child(1),
+main table#board>tbody td:nth-child(4) {
+  display: none;
+}
+
+footer section.info {
+  display:block;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+footer section.sitemap1 {
+  display:block;
+  width: 100%;
+}
+
+.anne_container{width:100%;height:500px;}/*sub3 text*/
+
+div.flex.reverse{
+  flex-wrap: wrap-reverse;
+}
+div.flex>div.flex-2p3.mobileslice,
+div.flex>div.flex-1p3.mobileslice,
+div.flex>div.flex-6p10.mobileslice,
+div.flex>div.flex-4p10.mobileslice,
+div.flex>div.flex-half.mobileslice {
+  width: 100%;
+}
+div.flex>div.flex-half-half.mobileslice {
+  width: 50%;
+}

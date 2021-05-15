@@ -1,0 +1,26 @@
+$_SERVER['DOCUMENT_ROOT'] = 현재 사이트가 위치한 서버상의 위치 = webappinclude
+$_SERVER['HTTP_ACCEPT_ENCODING'] = 인코딩 방식 = gzip, deflate
+
+$_SERVER['HTTP_ACCEPT_LANGUAGE'] = 언어 = ko
+
+$_SERVER['HTTP_USER_AGENT'] = 사이트 접속한 사용자 환경 = Mozilla4.0(compatible; MSIE 6.0; Windows NT 5.1; Q312461; .NET CLR 1.0.3705
+
+$_SERVER['REMOTE_ADDR'] = 사이트 접속한 사용자 IP = xxx.xxx.xxx.xxx
+
+$_SERVER['SCRIPT_FILENAME'] = 실행되고 있는 위치와 파일명 = webappincludeindex.php
+
+$_SERVER['SERVER_NAME'] = 사이트 도메인 = WWW.X2CHI.COM
+
+$_SERVER['SERVER_PORT'] = 사이트가 사용하는 포트 = 80
+
+$_SERVER['SERVER_SOFTWARE'] = 서버의 소프트웨어 환경 = Apache1.3.23 (Unix) PHP4.1.2 mod_fastcgi2.2.10 mod_throttle3.1.2 mod_ssl2.8.6 OpenSSL0.9.6c
+
+$_SERVER['GATEWAY_INTERFACE'] = cGI 정보 = CGI1.1
+
+$_SERVER['SERVER_PROTOCOL'] = 사용된 서버 프로토콜 = HTTP1.1
+
+$_SERVER['REQUEST_URI'] = 현재페이지의 주소에서 도메인 제외 =  index.phpuser=&name=
+
+$_SERVER['PHP_SELF'] = 현재페이지의 주소에서 도메인과 넘겨지는 값 제외 = index.php
+
+$_SERVER['APPL_PHYSICAL_PATH'] = 현재페이지의 실제 파일 주소 = Dwebapp

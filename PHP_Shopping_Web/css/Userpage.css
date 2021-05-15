@@ -1,0 +1,46 @@
+.u_main_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.u_nav{
+  width: 20%;
+  height: auto;
+  float:left;
+  display: inline-block;
+
+}
+.u_nav_wrap{
+  border: solid 1px #e1e4e6;
+
+  position: relative;
+  float:left;
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+}
+.u_nav_Tocks{
+  height: 150px;
+  background: #ddd;
+}
+.u_nav_Tocks > h4{
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+.u_nav_wrap > ul {
+  margin : 20px;
+}
+.u_gnb{
+  width: 100%;
+  height: 150px;
+}
+.u_gnb_wrap{
+  text-align: center;
+  border: solid 1px #e1e4e6;
+  width: 20%;
+  padding : 20px;
+  height: 150px;
+  float:left;
+}

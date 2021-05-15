@@ -1,0 +1,248 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="http://hyomincarecenter.kro.kr/script/navigation.js"></script>
+<link href="http://hyomincarecenter.kro.kr/css/css_sub2.css" rel="stylesheet" type="text/css">
+<link href="http://hyomincarecenter.kro.kr/css/size1366.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1366px)">
+<link href="http://hyomincarecenter.kro.kr/css/size600.css" rel="stylesheet" type="text/css" media="screen and (max-width: 900px)">
+<title>더사랑효민요양센터</title>
+<meta property="og:type" content="website">
+<meta name="description" content="경기도 용인시 수지구 죽전동 현암로 95">
+<meta property="og:title" content="더사랑효민요양센터">
+<meta property="og:image" content="http://hyomincarecenter.kro.kr/img/logo.png">
+<meta property="og:description" content="수지구 죽전동, 현암로 95번 길">
+<meta property="og:url" content="http://hyomincarecenter.kro.kr">
+<meta name="naver-site-verification" content="fbea36cf5c8e6c8516f8064c7d119a0710bb8fcd"/>
+<link rel="canonical" href="http://hyomincarecenter.kro.kr/sub.php">
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+</head>
+<body>
+<header>
+<table>
+<tbody>
+<tr>
+<td class="logo">
+<a href="http://hyomincarecenter.kro.kr?p=0" class="logo">
+<img src="http://hyomincarecenter.kro.kr/img/logo.png">
+</a>
+</td>
+<td class="hamberger">
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<span></span>
+<span></span>
+<span></span>
+</label>
+<div class="sidebar">
+<input id="subbtn1" type="checkbox">
+<label for="subbtn1">요양원소개</label>
+<ul>
+<li><a href="http://hyomincarecenter.kro.kr?p=2#sub1">인사말</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=2#sub2">시설소개</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=2#sub3">오시는 길</a></li>
+</ul>
+<input id="subbtn2" type="checkbox">
+<label for="subbtn2">서비스 소개</label>
+<ul>
+<li><a href="http://hyomincarecenter.kro.kr?p=3#sub1">노인장기요양보험</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=3#sub2">이용 안내</a></li>
+</ul>
+<input id="subbtn3" type="checkbox">
+<label for="subbtn3">상담신청</label>
+<ul>
+<li><a href="http://hyomincarecenter.kro.kr?p=4">상담신청</a></li>
+</ul>
+<input id="subbtn4" type="checkbox">
+<label for="subbtn4">게시판</label>
+<ul>
+<li><a href="http://hyomincarecenter.kro.kr?p=5">공지사항</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=6">갤러리</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=7">일정표</a></li>
+<li><a href="http://hyomincarecenter.kro.kr?p=8">생활시간표</a></li>
+</ul>
+</div>
+</td>
+<td class="nav">
+<ul>
+<li>
+<a href="http://hyomincarecenter.kro.kr?p=2">요양원소개</a>
+<ul>
+<a href="http://hyomincarecenter.kro.kr?p=2#sub1"><li>인사말</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=2#sub2"><li>시설소개</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=2#sub3"><li>오시는 길</li></a>
+</ul>
+</li><li>
+<a href="http://hyomincarecenter.kro.kr?p=3">서비스 소개</a>
+<ul>
+<a href="http://hyomincarecenter.kro.kr?p=3#sub1"><li>노인장기요양보험</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=3#sub2"><li>이용 안내</li></a>
+</ul>
+</li><li>
+<a href="http://hyomincarecenter.kro.kr?p=4">상담신청</a>
+</li><li>
+<a href="http://hyomincarecenter.kro.kr?p=5">게시판</a>
+<ul>
+<a href="http://hyomincarecenter.kro.kr?p=5"><li>공지사항</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=6"><li>갤러리</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=7"><li>일정표</li></a>
+<a href="http://hyomincarecenter.kro.kr?p=8"><li>생활시간표</li></a>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</header>
+<div class="pageimg">
+<img class="active" src="http://hyomincarecenter.kro.kr/img/main/main1.jpg" alt="image1" />
+<img src="http://hyomincarecenter.kro.kr/img/main/main2.jpg" alt="image2" />
+<img src="http://hyomincarecenter.kro.kr/img/main/main4.jpg" alt="image3" />
+<img src="http://hyomincarecenter.kro.kr/img/main/main5.jpg" alt="image3" />
+<table class="map">
+<tr>
+<td class="active visible"><h1>유명해지기 위해 110년을 기다렸다. 가능한 한 오래 그 유명세를 즐기고 싶다.</h1>
+<h2>루이스 칼망 - 기네스북 최장수 인물 인물로 등재된 후</h2>
+</td>
+<td><h1>100세까지 살고 싶게 만드는 모든 것들을 포기하면, 100세까지 살 수 있다.</h1>
+<h2>우디 앨런</h2>
+</td>
+<td><h1>나이가 드니까 안 노는게 아니다. 놀지 않기 때문에 나이가 드는 것이다.</h1>
+<h2>조지 버나드 쇼</h2>
+</td>
+<td><h1>나이 드는 게 비극적인 이유는, 우리가 사실은 젊기 때문이다.</h1>
+<h2>오스카 와일드</h2>
+</td>
+</tr>
+</table>
+</div>
+<script src="http://hyomincarecenter.kro.kr/script/js_sub0.js" charset="utf-8"></script>
+<main>
+<section class="bg-white center">
+<h2 class="slogan">어르신들이 행복해지는 이곳 <span>효민 요양원</span>에 오신 것을 환영합니다!</h2>
+<div class="flex reverse">
+<div class="flex flex-4p10 mobileslice">
+<div class="flex-half">
+<h4 class="style-p">전화상담</h4><small class="tool">031-266-1774</small>
+</div>
+<div class="flex-half">
+<h4 class="style-p">방문가능시간</h4><small class="tool">09:00~18:00<br>연중무휴</small>
+</div>
+<div class="flex-full">
+<h4 class="style-p">이메일</h4><small class="tool"><a href="mailto:esm1008@naver.com">esm1008@naver.com</a></small>
+</div>
+<div class="flex-full">
+<small>Fax: 031-266-1775</small>
+<small>Phone: 010-4741-2164</small>
+</div>
+</div>
+<div class="flex flex-6p10 mobileslice">
+<div class="flex-half-half mobileslice">
+<img src="http://hyomincarecenter.kro.kr/img/whe.png" class="effect-color" onclick="location.href='http://hyomincarecenter.kro.kr/sub.php?p=2#sub3'">
+<small class="tool">요양원 위치</small>
+</div>
+<div class="flex-half-half mobileslice">
+<img src="http://hyomincarecenter.kro.kr/img/sang.png" class="effect-color" onclick="location.href='http://hyomincarecenter.kro.kr/sub.php?p=4'">
+<small class="tool">상담</small>
+</div>
+<div class="flex-half-half mobileslice">
+<img src="http://hyomincarecenter.kro.kr/img/lil.png" class="effect-color" onclick="location.href='http://hyomincarecenter.kro.kr/sub.php?p=7'">
+<small class="tool">프로그램 일정</small>
+</div>
+<div class="flex-half-half mobileslice">
+<img src="http://hyomincarecenter.kro.kr/img/iso.png" class="effect-color" onclick="location.href='http://hyomincarecenter.kro.kr/sub.php?p=3'">
+<small class="tool">입소안내</small>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-gray center">
+<h2>효민 프로그램</h2><span class="center"></span>
+<br>
+<div class="flex">
+<div class="flex-half-half mobileslice">
+<div class="effectbox">
+<img src="http://hyomincarecenter.kro.kr/img/program2.jpg" title="클릭하시면 원본크기로 보실 수 있습니다."onclick="doImgPop('img/program2.jpg')" />
+<strong>민요교실</strong>
+<p>민요를 같이 부르고 신나는 율동체조를 하는 시간입니다.</p>
+</div>
+</div>
+<div class="flex-half-half mobileslice">
+<div class="effectbox">
+<img src="http://hyomincarecenter.kro.kr/img/program3.jpg" title="클릭하시면 원본크기로 보실 수 있습니다."onclick="doImgPop('img/program3.jpg')" />
+<strong>노래교실</strong>
+<p>노래를 배우고 직접 노래를 부르면서 즐겁게 활동하는 시간입니다.</p>
+</div>
+</div>
+<div class="flex-half-half mobileslice">
+<div class="effectbox">
+<img src="http://hyomincarecenter.kro.kr/img/program1.jpg" title="클릭하시면 원본크기로 보실 수 있습니다."onclick="doImgPop('img/program1.jpg')" />
+<strong>실버레크레이션</strong>
+<p>노래와 율동을 따라하시면서 체조를 하는 시간입니다.</p>
+</div>
+</div>
+<div class="flex-half-half mobileslice">
+<div class="effectbox">
+<img src="http://hyomincarecenter.kro.kr/img/program4.jpg" title="클릭하시면 원본크기로 보실 수 있습니다."onclick="doImgPop('img/program4.jpg')" />
+<strong>박수치료</strong>
+<p>노래, 체조, 전도 등 여러가지 활동을 하는 시간입니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-white center">
+<h2>공지사항</h2><span class="center"></span>
+<table id="board">
+<thead>
+<tr id="field">
+<th>번호</th>
+<th>제목</th>
+<th class="td_container">작성일</th>
+<th>조회수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center"><a href="http://hyomincarecenter.kro.kr/sub.php?p=1&id=198">198</a></td>
+<td><a href="http://hyomincarecenter.kro.kr/sub.php?p=1&id=198">더 사랑효민요양센터 사이트 오픈 !</a></td>
+<td class="center"><a href="http://hyomincarecenter.kro.kr/sub.php?p=1&id=198">2019-10-06</a></td>
+<td class="center"><a href="http://hyomincarecenter.kro.kr/sub.php?p=1&id=198">2</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+<footer>
+<div class="guide">
+<img src="http://hyomincarecenter.kro.kr/../img/logo2.png" alt="">
+<section class="sitemap1">
+<ul>
+<li>요양원소개</li>
+<li>인사말</li>
+<li>시설소개</li>
+<li>오시는 길</li>
+</ul><ul>
+<li>서비스소개</li>
+<li>노인장기요양보험</li>
+<li>이용안내</li>
+</ul><ul>
+<li>상담신청</li>
+</ul><ul>
+<li>게시판</li>
+<li>공지사항</li>
+<li>갤러리</li>
+<li>일정표</li>
+</ul>
+</section><section class="info">
+<p>센터위치 : 경기도 용인시 죽전동 현암로 95 현대프라자 504호 <br> TEL : 031-266-1774 / FAX : 031-266-1775</p>
+<p>대표자:이선민 / Phone : 010-4741-2164 Email:esm1008@naver.com</p>
+<p>&copy;2019 by tec-k.</p>
+</section>
+</div>
+</footer>
+</body>
+</html>

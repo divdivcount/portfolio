@@ -1,0 +1,238 @@
+form{
+  display:block;
+  width:100%;
+}
+form>div {
+  display: block;
+  border: solid 2px #444;
+  padding: 0.2em 0.2em;
+  overflow-x: hidden;
+}
+form>div>input, form>div>textarea {
+  width: 100%;
+  display:block;
+  border: none;
+  font-size: 1.2em;
+}
+input, textarea {
+
+}
+textarea {
+  resize: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 1.2em;
+}
+table>tbody>tr>th {
+  background-color: #ddd;
+  padding: 0.2em;
+  color: #444;
+  font-weight: bold;
+}
+
+input[type=text],
+select {
+  font-size: 1.2em;
+}
+input[type=checkbox] { display:none;}
+div.minibox,
+input[type=checkbox] + label,
+button[type=button],
+button[type=submit] {
+  border: solid 2px #ddd;
+  display:inline-block;
+  height:30px;
+}
+input[type=checkbox] + label {
+  width:30px;
+}
+input[type=checkbox]:checked + label,
+button[type=button]:hover,
+button[type=submit]:hover {
+  border-color: #0df;
+  background-color: #0df;
+}
+button[type=button],
+button[type=submit] {
+  padding: 0 1em;
+}
+button[disabled] {
+  color: #fff;
+}
+button[disabled]:hover {
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0);
+}
+div.minibox {
+  height: auto;
+}
+div.minibox>form>*,
+div.minibox>* {vertical-align: middle;}
+
+a.abtn {
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background-color: #444;
+  border-radius: 5%;
+  border: solid 2px #444;
+
+  color: #fff;
+}
+a.abtn:hover,
+a.abtn.current {
+  background-color: #fff;
+  color: #444;
+}
+
+.center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+table>thead>tr>th {
+  border-bottom: solid 0.25em #ddd;
+}
+
+table {
+  user-select: none;
+}
+table>thead>tr>th,
+table>tbody>tr>td {
+  font-size:1.1em;
+  font-weight: normal;
+  padding: 0.5em 0;
+}
+
+div#gallery,
+div.imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+div#gallery>div,
+div.imgs>div {
+  width:22.75%;
+  padding-right: 3%;
+}
+div#gallery>div:nth-child(4n),
+div.imgs>div:nth-child(4n) {
+  padding-right: 0;
+}
+div#gallery>div>input[type=text],
+div.imgs>div>input[type=text] {
+  width: 90%;
+}
+
+
+div.imgs>div.box>img {
+  display: block;
+  max-width: 100%;
+}
+
+
+table#gallery>tbody>tr>td>div {
+
+}
+table#gallery>tbody>tr>td>div>img{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+table#gallery>tbody>tr>td>div>h4 {
+  margin-top:0.5em;
+}
+table#consulting>tbody:nth-child(1) tr>td:hover{
+  cursor: pointer;
+}
+table#consulting>tbody tr>td {text-align: center;}
+
+div.inputbox{
+  border: solid 2px #eee;
+  padding: 0.25em;
+}
+div.inputbox>input[type=text] {
+  display:block;
+  width:100%;
+  border: 0;
+}
+section,
+div.box {
+  border: solid 2px #ddd;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+main img {
+  width: 100%;
+}
+
+section {
+  margin: 1em;
+}
+
+ul#sub {
+  display:block;
+  background-color: #ddd;
+  padding: 0 2em;
+}
+ul#sub>li{
+  display:inline-block;
+  padding: 0.5em 0.25em;
+  font-size:1.2em;
+}
+ul#sub>li>* {
+  vertical-align: middle;
+}
+ul#sub>li input[type=text] {
+  width: 4em;
+}
+
+
+.sign_pw_bg{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.sign_pw{
+
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox > input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #799f26;
+
+}
+.sign_box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+
+}

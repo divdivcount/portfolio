@@ -1,0 +1,13 @@
+main,
+div.pageimg,
+header>table,
+div.guide,
+div.pageimg,
+div.pageimg img {
+  width: 100%;
+}
+
+.sangdam_mar{width: 100%;}/*sangdam text*/
+#sangdam>.sangdam_mar>#wr1 {width: 70%;}/*sub4 input*/
+#sangdam>.sangdam_mar>#wr2 {width: 70%;}/*sub4 input*/
+#sangdam>.sangdam_mar>textarea{width: 70%;}/*sub4 textarea*/
