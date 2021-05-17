@@ -1,9 +1,11 @@
+html{font-size: 10px !important;}
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 #wrap_container{
@@ -26,7 +28,7 @@
                        'project'
                        'contact';
   grid-template-columns: 100%;
-  grid-template-rows: 943px 1460px 1691px 689px;
+  grid-template-rows: 1.37fr 2.12fr 2.45fr 1fr;
   grid-gap: 2.98% ;
   color : #2d2d2d;
 }
@@ -50,7 +52,7 @@
   background-color: #fff;
   border-bottom-right-radius:25px;
   border-bottom-left-radius:25px;
-  font-size: 1.042vw;
+  font-size: 2rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
   position: fixed;
@@ -107,7 +109,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   font-weight: 400;
-  font-size: 2.604vw;
+  font-size: 5rem;
 }
 #center_text > h2{
   position: absolute;
@@ -115,7 +117,7 @@
   top: 57%;
   transform: translate(-50%, -57%);
   font-weight: 400;
-  font-size: 2.604vw;
+  font-size: 8rem;
 }
 #about_container{
   grid-area : about;
@@ -123,34 +125,85 @@
   grid-template-areas:    "abount_text abount_text"
                           "img_container text_header";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 100%;
-  margin-top: 200px;
+  grid-template-rows: 82px calc(100vh - 82px);
+  margin-top: 9.9%;
+  grid-row-gap: 100px;
 }
 
 #img_container{
   grid-area : img_container;
+  width: 75%;
+  justify-self:end;
 }
-#img_container > img{
-  width: 100%;
-  height: auto;
+#img_container > #img{
+  background-image: url("../img/about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 #text_header{
   grid-area: text_header;
 }
 #abount_text{
   grid-area: abount_text;
+
+
 }
 #abount_text>h3 {
   color: #2d2d2d;
-  font-size: 50px;
+  font-size: 5rem;
   line-height: 72px;
   text-align: center;
   /* notosanskr-medium*/
 }
+#abount_text>h3:after {
+  content: "";
+  display: block;
+  width: 100px;
+  border-bottom: 5px solid #6b5892;
+  margin: 10px auto;
+}
+
 h3:after {
         content: "";
         display: block;
         width: 100px;
         border-bottom: 5px solid #6b5892;
         margin: 10px auto;
+
       }
+#text_container{
+  margin-top: 216px;
+  width: 70.3%;
+}
+#text_header{
+  font-size: 4rem;
+}
+#text_content{
+  margin-top: 100px;
+  font-size: 3rem;
+  color:#707070;
+}
+@media (max-width:767px) {
+  #about_container{
+    grid-area : about;
+    display: grid;
+    grid-template-areas:    "abount_text"
+                            "img_container"
+                            "text_header";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+
+  }
+  #img_container{
+    grid-area : img_container;
+    width: 100%;
+    justify-self:center;
+  }
+  #img_container > #img{
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+}
