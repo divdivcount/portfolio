@@ -1,0 +1,11 @@
+#wrap_container{
+  display: grid;
+  grid-template-areas: 'header'
+                       'about'
+                       'skills'
+                       'project'
+                       'contact';
+  grid-template-columns: 100%;
+  grid-template-rows: 1080px 943px 1460px 1691px 689px;
+  grid-row-gap: 200px ;
+}
