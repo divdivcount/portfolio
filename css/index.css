@@ -27,7 +27,7 @@
                        'contact';
   grid-template-columns: 100%;
   grid-template-rows: 943px 1460px 1691px 689px;
-  grid-row-gap: 200px ;
+  grid-gap: 2.98% ;
   color : #2d2d2d;
 }
 
@@ -117,21 +117,40 @@
   font-weight: 400;
   font-size: 2.604vw;
 }
-#p2{
+#about_container{
+  grid-area : about;
+  display: grid;
+  grid-template-areas:    "abount_text abount_text"
+                          "img_container text_header";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 100%;
   margin-top: 200px;
 }
-#p2>#abount_text>h3 {
+
+#img_container{
+  grid-area : img_container;
+}
+#img_container > img{
+  width: 100%;
+  height: auto;
+}
+#text_header{
+  grid-area: text_header;
+}
+#abount_text{
+  grid-area: abount_text;
+}
+#abount_text>h3 {
   color: #2d2d2d;
   font-size: 50px;
   line-height: 72px;
   text-align: center;
-
   /* notosanskr-medium*/
 }
 h3:after {
         content: "";
         display: block;
         width: 100px;
-        border-bottom: 2px solid #6b5892;
+        border-bottom: 5px solid #6b5892;
         margin: 10px auto;
       }
