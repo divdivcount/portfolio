@@ -17,6 +17,7 @@
   font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
 }
 
+
 h4 {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -64,7 +65,7 @@ h4 {
 .skill_box {
   background-color: #f2f2f2;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.16);
   display: inline-block;
   margin-top: 50px;
   width: 260px;
@@ -113,4 +114,46 @@ h4 {
 }
 .skill_box>img#ubuntu {
   margin: 30px 58px;
+}
+
+
+
+@media (max-width: 1205px) {
+  #front_skills_container,
+  #back_skills_container {
+    width: 100%;
+  }
+  #front_skills_container>.grid_container,
+  #back_skills_container>.grid_container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+
+
+
+#project_six_container {
+  margin: 110px auto 0;
+  position: relative;
+  width: 1366px;
+}
+#project_six_container>.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 100px;
+}
+.project_box {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.16);
+  display: grid;
+  height: 450px;
+  overflow: hidden;
+}
+.project_box>img {
+  background-color: #4f3e71;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
