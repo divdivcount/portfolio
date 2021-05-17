@@ -25,9 +25,11 @@ h4 {
 }
 
 
-#skills_container>#abount_text>h3 {
+#skills_container>#abount_text>h3,
+#project_container>#abount_text>h3 {
   color: #2d2d2d;
   font-size: 50px;
+  font-weight: 500;
   line-height: 72px;
   text-align: center;
 
@@ -39,7 +41,12 @@ h4 {
   width: 1205px;
   margin: 100px auto 0;
 }
-#front_skills_container>h4 {
+#back_skills_container {
+  width: 1205px;
+  margin: 100px auto 200px;
+}
+#front_skills_container>h4,
+#back_skills_container>h4 {
   color: #4f3e71;
   display: block;
   font-size: 30px;
@@ -47,7 +54,8 @@ h4 {
   line-height: 44px;
   text-align: center;
 }
-#front_skills_container>.grid_container {
+#front_skills_container>.grid_container,
+#back_skills_container>.grid_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0 55px;
@@ -55,13 +63,15 @@ h4 {
 
 .skill_box {
   background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.15);
   display: inline-block;
   margin-top: 50px;
   width: 260px;
 }
 .skill_box>img {
   display: block;
-  margin: 20px 58px 21px 58px;
+  margin: 20px 58px 21px;
 }
 .skill_box>h4 {
   color: #707070;
@@ -72,4 +82,35 @@ h4 {
   margin-bottom: 20px;
   text-align: center;
   /* notoSansKR-Normal*/
+}
+
+
+
+/* icon margin */
+.skill_box>img#sass {
+  margin: 38px 45px 38px;
+}
+.skill_box>img#java {
+  margin: 20px 70px 27px;
+}
+.skill_box>img#php {
+  margin: 50px 45px 59px;
+}
+.skill_box>img#nodejs {
+  margin: 30px 33px 28px 32px;
+}
+.skill_box>img#mysql {
+  margin: 50px 45px 67px;
+}
+.skill_box>img#python {
+  margin: 30px 57px 29px 58px;
+}
+.skill_box>img#c {
+  margin: 30px 66px;
+}
+.skill_box>img#linux {
+  margin: 30px 70px 29px;
+}
+.skill_box>img#ubuntu {
+  margin: 30px 58px;
 }
