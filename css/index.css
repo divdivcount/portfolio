@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+#wrap_container{
+  display: grid;
+  grid-template-areas: 'header'
+                       'about'
+                       'skills'
+                       'project'
+                       'contact';
+  grid-template-columns: 100%;
+  grid-template-rows: 1080px 943px 1460px 1691px 689px;
+  grid-row-gap: 200px ;
+  color : #2d2d2d;
+}
+#p1{
+  grid-area: header;
+  background-image: url("../img/main.png");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#header_container{
+  position: relative;
+}
+#header_container > #header{
+
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100px;
+  background-color: #fff;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+  font-size: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+}
+#header_container > #header > #logo{
+  grid-area: logo;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #6b5892;
+}
+#header_container > #header > #nav{
+  grid-area: nav;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+#header_container > #header > #nav > ul li{
+  display: inline;
+  margin-left : 10px;
+}
+#header_container > #header > #nav > ul > li > a{
+  display: inline;
+  margin-left : 50px;
+  color : #2d2d2d;
+}
+#header_container > #header > #nav > ul > li > a:hover{
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6b5892;
+  text-decoration: underline #6b5892;
+  text-underline-position: under;
+
+}
