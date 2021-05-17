@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 #wrap_container{
@@ -46,7 +46,7 @@
   justify-items: center;
   align-items: center;
 
-  font-weight: 500;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.45;
@@ -58,6 +58,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  font-weight: bold;
 
 }
 #header_container > #header > #nav > ul li{
@@ -70,7 +71,6 @@
   color : #2d2d2d;
 }
 #header_container > #header > #nav > ul > li > a:hover{
-  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -78,5 +78,6 @@
   color: #6b5892;
   text-decoration: underline #6b5892;
   text-underline-position: under;
+  font-weight: bold;
 
 }
