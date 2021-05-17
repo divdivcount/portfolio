@@ -1,0 +1,34 @@
+
+#skills_container>#abount_text>h3 {
+  color: #2d2d2d;
+  font-size: 50px;
+  line-height: 72px;
+  text-align: center;
+
+  /* notosanskr-medium*/
+}
+
+
+#front_skills_container {
+  display: grid;
+  grid-gap: 0 25px;
+  grid-template-columns: 4;
+}
+
+.skill_box {
+  background-color: #f2f2f2;
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+}
+.skill_box>img {
+  margin: 20px 58px 21px 58px;
+}
+.skill_box>h4 {
+  color: #707070;
+  display: inline;
+  font-size: 25px;
+  line-height: 50px;
+
+  /* notoSansKR-Normal*/
+}
