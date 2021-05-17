@@ -8,24 +8,37 @@
 
 #wrap_container{
   display: grid;
-  grid-template-areas: 'header'
-                       'about'
+  grid-template-areas: 'header';
+  grid-template-columns: 100%;
+  grid-template-rows: 1080px;
+  grid-row-gap: 200px ;
+  color : #2d2d2d;
+}
+#content_container{
+  display: grid;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  grid-template-areas: 'about'
                        'skills'
                        'project'
                        'contact';
   grid-template-columns: 100%;
-  grid-template-rows: 1080px 943px 1460px 1691px 689px;
+  grid-template-rows: 943px 1460px 1691px 689px;
   grid-row-gap: 200px ;
   color : #2d2d2d;
 }
+
 #p1{
   grid-area: header;
   background-image: url("../img/main.png");
   background-attachment: fixed;
   background-size: 100% 100%;
+  position: relative;
 }
 #header_container{
-  position: relative;
+
 }
 #header_container > #header{
 
@@ -36,9 +49,12 @@
   background-color: #fff;
   border-bottom-right-radius:25px;
   border-bottom-left-radius:25px;
-  font-size: 20px;
+  font-size: 1.042vw;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 #header_container > #header > #logo{
   grid-area: logo;
@@ -46,7 +62,7 @@
   justify-items: center;
   align-items: center;
 
-  font-weight: bold;
+
   font-stretch: normal;
   font-style: normal;
   line-height: 1.45;
@@ -80,4 +96,23 @@
   text-underline-position: under;
   font-weight: bold;
 
+}
+#center_text {
+  color:#fff;
+}
+#center_text > h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 2.604vw;
+}
+#center_text > h2{
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -57%);
+  font-weight: 400;
+  font-size: 2.604vw;
 }
