@@ -127,7 +127,6 @@ html{font-size: 10px !important;}
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 82px calc(100vh - 82px);
   margin-top: 9.9%;
-  grid-row-gap: 100px;
 }
 
 #img_container{
