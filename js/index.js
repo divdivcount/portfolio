@@ -1,34 +1,23 @@
-$(document).ready(function(){
-  $("#p0").click(function(){
-    var menuHeight = document.querySelector("#wrap_container").offsetHeight;
-    var location = document.querySelector("#wrap_container").offsetTop;
-    window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-  });
-  $("#p2").click(function(){
-    var menuHeight = document.querySelector("#header_container").offsetHeight;
-    var location = document.querySelector("#content_container").offsetTop;
-    window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-  });
-  $("#p3").click(function(){
-    var menuHeight = document.querySelector("#header_container").offsetHeight;
-    alert(menuHeight);
-    var location = document.querySelector("#skills_container").offsetTop;
-    alert(location);
-    window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-  });
-  $("#p4").click(function(){
-    var menuHeight = document.querySelector("#header_container").offsetHeight;
-    var location = document.querySelector("#project_container").offsetTop;
-    window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-  });
-  $("#p5").click(function(){
-    var menuHeight = document.querySelector("#header_container").offsetHeight;
-    var location = document.querySelector("#contact_container").offsetTop;
-    window.scrollTo({top:location - menuHeight, behavior:'smooth'});
-  });
 
-})
-var menuHeight = document.querySelector("body").offsetHeight;
-alert(menuHeight);
-var location = document.querySelector("#about_container").offsetTop;
-alert(location);
+$(document).ready(function(){
+  // header bar 높이
+  var barSize = document.querySelector("#header").offsetHeight;
+  // 버튼에 따른 이동할 Y 좌표
+  var targetInfos = {
+    '#p0': document.querySelector("#wrap_container").offsetTop,
+    '#p2': document.querySelector("#content_container").offsetTop-barSize,
+    '#p3': document.querySelector("#skills_container").offsetTop-barSize,
+    '#p4': document.querySelector("#project_container").offsetTop-barSize,
+    '#p5': document.querySelector("#contact_container").offsetTop-barSize
+  };
+  for(const [ button, targetY ] of Object.entries(targetInfos)) {
+    // 버튼에 리스너 등록
+    $(button).click(function(e) {
+      e.preventDefault();
+      window.scroll({
+        top: targetY,
+        behavior:'smooth'
+      });
+    });
+  }
+});
