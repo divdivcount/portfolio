@@ -189,3 +189,23 @@ h4, h5 {
   font-size: 15px;
   font-weight: 400;
 }
+
+
+#contact_list {
+  display: block;
+  margin-top: 100px;
+}
+#contact_list>img {
+  display: block;
+  margin: 0 auto;
+}
+#contact_list>a {
+  color: #2d2d2d;
+  display: block;
+  font-size:25px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
