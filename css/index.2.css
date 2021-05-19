@@ -124,7 +124,7 @@ h4, h5 {
 @media (max-width: 1305px) {
   #front_skills_container,
   #back_skills_container {
-    width: 100%;
+    width: 600px;
   }
   #front_skills_container>.grid_container,
   #back_skills_container>.grid_container {
@@ -249,7 +249,18 @@ h4, h5 {
     width: 90%;
   }
 }
-
+@media (max-width: 600px) {
+  .project_box>.text_container>h5 {
+    font-size: 20px;
+  }
+  .project_box>.text_container>.subtitle_layer>h6{
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .project_box>.text_container>.subtitle_layer {
+    display: block;
+  }
+}
 
 
 
