@@ -73,6 +73,9 @@ h4, h5 {
 .skill_box>img {
   display: block;
   margin: 20px 58px 21px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .skill_box>h4 {
   color: #707070;
@@ -118,7 +121,7 @@ h4, h5 {
 
 
 
-@media (max-width: 1205px) {
+@media (max-width: 1305px) {
   #front_skills_container,
   #back_skills_container {
     width: 100%;
@@ -129,7 +132,17 @@ h4, h5 {
     justify-items: center;
   }
 }
-
+@media (max-width: 700px) {
+  #front_skills_container,
+  #back_skills_container {
+    width: 90%;
+  }
+  #front_skills_container>.grid_container,
+  #back_skills_container>.grid_container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
 
 
 
@@ -168,29 +181,32 @@ h4, h5 {
   grid-template-areas:  'title'
                         'subtitle_layer';
   justify-content: space-between;
+  z-index: 2;
 }
 .hover_action{
-  display: none;
-  position: relative;
-  top:0;
-  width: 0%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.project_box>img:hover + .hover_action {
-
   display: block;
   position: absolute;
+  top:0;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hover_action:hover {
+
+
   opacity: 1;
   background-color:rgba(0,0,0,0.5);
-  width:100%;
-  height : 67%;
+
   -webkit-transition: all 1s;
   transition: all 1s;
 
 }
-
+.hover_action[onclick] {
+  cursor: pointer;
+}
 
 
 
@@ -218,6 +234,24 @@ h4, h5 {
   font-size: 15px;
   font-weight: 400;
 }
+
+@media (max-width: 1466px) {
+  #project_six_container {
+    width: 633px;
+  }
+  #project_six_container>.grid_container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: stretch;
+  }
+}
+@media (max-width: 733px) {
+  #project_six_container {
+    width: 90%;
+  }
+}
+
+
+
 
 
 #contact_list {

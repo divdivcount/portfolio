@@ -218,3 +218,46 @@ h3:after {
     height: 100%;
   }
 }
+
+
+
+
+
+@media (max-width:767px) {
+  #header_container > #header{
+    display: none;
+  }
+  #center_text > h1{
+    font-size: 3rem;
+  }
+  #center_text > h2{
+    text-align: center;
+    width:100%;
+    font-size: 4rem;
+  }
+  #about_container{
+    grid-area : about;
+    display: grid;
+    grid-template-areas:    "abount_text"
+                            "img_container"
+                            "text_header";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.5fr 1fr;
+
+  }
+  #img_container{
+    grid-area : img_container;
+    width: 100%;
+    justify-self:center;
+  }
+  #img_container > #img{
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  #text_container{
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
