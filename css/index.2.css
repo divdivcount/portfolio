@@ -177,7 +177,7 @@ h4, h5 {
   display: grid;
   padding: 37px 50px 36px;
   height: 150px;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);padding: 37px 50px 36px;
   grid-template-areas:  'title'
                         'subtitle_layer';
   justify-content: space-between;
@@ -250,11 +250,14 @@ h4, h5 {
   }
 }
 @media (max-width: 600px) {
+  .project_box>.text_container{
+    padding: 17px 20px 16px;
+  }
   .project_box>.text_container>h5 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .project_box>.text_container>.subtitle_layer>h6{
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
   }
   .project_box>.text_container>.subtitle_layer {

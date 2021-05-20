@@ -14,9 +14,12 @@
 .gnb-inner {
   display: grid;
   grid-template-areas: "logo nav";
-  grid-template-columns: 30% 70%;
-  padding: 0 278px;
+  grid-template-columns: 127px auto;
   line-height: 100px;
+
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1364px;
 }
 
 .logo {
@@ -175,5 +178,18 @@
   .trigger.active span:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg)
+  }
+
+}
+
+@media (max-width: 1464px) {
+  .gnb-inner {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  #header {
+    font-size: 15px;
   }
 }
