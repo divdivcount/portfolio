@@ -1,0 +1,106 @@
+html, body {font-size: 10px;}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSansKR_m";
+  color: #6d6d6d;
+  width:100%;
+  background-color:#f0f0f0;
+  position: relative;
+}
+#signupbox{
+  width: 42%;
+  height: auto;
+  text-align: left;
+  margin: 50px auto;
+}
+#boundarybox {
+  text-align: center;
+  font-size:2.3rem;
+  color: #6d6d6d;
+  margin:12px 0 12px 0;
+  align-items: center;
+  display:flex;
+}
+h3{
+  font-weight: 500;
+  color: #6d6d6d;
+}
+.imgbox {
+  text-align:center;
+}
+#submitBtn_box{
+  width: 100%;
+  text-align: center;
+}
+#submitBtn{
+  width: 100%;
+  max-width: 400px;
+  height: 5.0rem;
+ color:#ffffff;
+ font-family: "NotoSansKR_m";
+ font-size: 1.8rem;
+ background: linear-gradient(to left, #bca8ff, #0090ff);
+ outline: none;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
+}
+.agreement {
+  color:Black;
+  font-size:1.0rem;
+  font-family: "NotoSansKR_t";
+  width: 100%;
+  height: 280px;
+  border: solid 1px #b7b7b7;
+  overflow-y: scroll;
+}
+.agreement_title {
+  display: flex;
+  align-items: center;
+}
+.checkline {
+  margin-bottom:30px;
+  color: #848484;
+  font-size: 1.3rem;
+}
+.both_checkline{
+  margin-bottom:35px;
+  color: #4a4a4a;
+  font-size: 1.3rem;
+  font-family:"NotoSansKR_b";
+  text-decoration:underline 1px;
+}
+.line  {
+  width: 34%;
+  height: 2px;
+  margin:0px;
+  background-color: #a7a7a7;
+}
+.tite_1{
+  width: 40%;
+}
+.bluedot{
+  width: 10px;
+  height: 17px;
+  margin-right: 10px;
+  background-color: #00b3ff;
+}
+@media only screen and (max-width: 1440px) {
+  #signupbox{width:60%;}
+}
+@media only screen and (max-width: 1024px) {
+  #signupbox{width:70%;}
+}
+
+@media only screen and (max-width: 768px) {
+  #signupbox{width: 80%;}
+}
+
+@media only screen and (max-width: 540px) {
+  #signupbox{width: 90%;}
+  .line{width: 20%}
+  .tite_1{width: 60%}
+  .imgbox img{    width: 100%;  }
+  .imgbox input{    width: 100%;  }
+}

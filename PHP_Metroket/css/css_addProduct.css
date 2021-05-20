@@ -1,0 +1,139 @@
+html,body{font-size: 10px!important;line-height: 1.5;}
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  position: relative;
+  font-family: "NotoSansKR_r";
+}
+#wrapPage{
+  background-color:#f0f0f0;
+  width:100%;
+  background-color:#f0f0f0;
+}
+a{text-decoration: none;}
+#wrapContainer_Box{
+  width: 72%;
+  margin: 10.0rem auto;
+}
+.radius_box{
+  width: 100%;
+  border-radius:10px;
+  background-color: WHITE;
+  padding: 2.0rem 3.0rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5.0rem;
+  box-shadow: 5px 5px 20px 0 rgba(200, 200, 200, 0.16);
+ }
+.title_box{
+  border-bottom: solid 0.3rem #F5F6F7;
+  display: flex;
+  align-items: center;
+  padding-bottom:1.0rem;
+}
+.title_box d{color:#0099ff}
+.title_box h2{font-family: "NotoSansKR_r";font-size: 2.5rem;}
+.title_box span{font-family: "NotoSansKR_r";margin-left: 1.0rem;font-size: 1.7rem;color:#a7a7a7}
+.content_box{
+  width: 100%;
+  margin-top: 4.0rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: "NotoSansKR_r";
+}
+#pageTitle_box .title_box{border:none;padding: 0}
+#check_TitleCount,#check_explainTextCount {color: #a7a7a7}
+#check_TitleCount span,#check_explainTextCount span {color:#0099ff;}
+.categoryGrid_box{
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows: 6.0rem;
+  grid-gap:1.0rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+.categorylabel{cursor: pointer;color: #3b3b3b;font-size: 1.6rem;}
+#selectedCategory{color: blue;}
+.test{width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;}
+
+
+.imgGrid_box{
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-gap:1.0rem;
+  grid-template-columns: repeat(6, minmax(125px, 1fr));
+}
+.imgGrid_box .img_Item{width:150px;height:150px;background-size:100% 100%;background-repeat:no-repeat;}
+
+#insertTitle_box .content_box{font-size:1.7rem ;border-bottom: 2px solid #a7a7a7;justify-content: space-between;}
+#insertTitle_box .w3-input{outline: none;background-color:white!important;border-bottom:none!important;width: 85%}
+
+
+#insertPrice_box .w3-input{outline: none;background-color:white!important;border-bottom:none;}
+#insertPrice_box .priceInput_box{align-items: center;display: flex;border-bottom: 2px solid #a7a7a7;width:35%;}
+#insertPrice_box .content_box{font-size:1.7rem;width: 100%;display: flex;justify-content:space-between;}
+#priceCheckImg {margin-right: 0.5rem}
+
+#insertText_box .content_box{font-size:1.7rem;flex-direction:column;align-items:flex-end;margin-top:2.0rem}
+#insertText_box textarea{outline:none;border:none;}
+#check_explainTextCount {margin-right: 0.5rem;}
+
+.priceCheck_box{display: flex;align-items: center;}
+.priceCheck_on{font-size: 1.7rem;color:#3b3b3b;}
+.priceCheck_off{font-size: 1.7rem;color:#a7a7a7;}
+
+.btn_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.0em;
+}
+.btn_box input{width: 18.0rem;margin: 0 1.0rem}
+.btn_box input:nth-child(1){}
+.btn_box input:nth-child(2){background-color:#e3e3e3; }
+@media only screen and (min-width: 1920px) {
+  body{
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  #wrapContainer_Box{width: 83%;margin: 10rem auto;}
+  .imgGrid_box{grid-template-columns: repeat(6, 1fr);grid-gap:1.0rem;}
+  .imgGrid_box .img_Item{width: 125px;height: 125px;}
+}
+@media only screen and (max-width: 1024px) {
+  #wrapContainer_Box{width: 85%;margin: 10rem auto;}
+  html,body{font-size: 9px!important;}
+  .imgGrid_box{grid-template-columns: repeat(3, 1fr);}
+  .imgGrid_box .img_Item{width: 150px;height: 150px;}
+}
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 8px!important;}
+  #wrapContainer_Box{width: 90%;margin: 7rem auto;}
+  .radius_box{margin-bottom: 4.0rem;}
+  .categoryGrid_box{grid-template-columns:repeat(4,1fr)}
+  .imgGrid_box .img_Item{width: 125px;height: 125px;}
+}
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 8px!important;}
+  #wrapContainer_Box{margin: 5rem auto;}
+  .title_box{flex-direction: column;align-items: flex-start;}
+  #pageTitle_box .title_box{flex-direction: row;align-items: center;;}
+  .categoryGrid_box{grid-template-columns:repeat(3,1fr)}
+  .imgGrid_box .img_Item{width: 100px;height: 100px;}
+}
+@media only screen and (max-width: 425px) {
+  html,body{font-size: 8px!important;}
+  #insertPrice_box .priceInput_box{width:55%;}
+  .imgGrid_box .img_Item{width: 75px;height: 75px;}
+}
+@media only screen and (max-width: 340px) {
+  html,body{font-size: 7px!important;}
+}

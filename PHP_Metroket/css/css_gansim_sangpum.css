@@ -1,0 +1,172 @@
+html,body{font-size: 10px!important;}
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  background-color:#fff;
+  position: relative;
+  font-family: "NotoSansKR_r";
+}
+.w3-container{
+  padding:7.0rem 5.0rem;
+  max-width: none;
+  margin: 0;
+  overflow-y: hidden;
+}
+.w3-content .w3-container{
+  width: 100%;
+  padding: 0;
+  font-family: "NotoSansKR_r";
+}
+.productList_box{
+  width: 100%;
+}
+.productInfo_box{
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin: 0;
+  margin-top: 5.0rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:space-between;
+  padding: 2.0rem;
+}
+.productInfo_part_img{display: flex;align-items: center;}
+.productInfo_part_img .img_box{
+  width: 16.0rem;
+  height: 16.0rem;
+  flex-grow: 0;
+}
+.productInfo_part_img img{
+}
+.productInfo_part_text{
+  margin-left: 5.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.productTitle_line{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+  .pr_title{
+    font-size: 3.0rem;
+    color: #3b3b3b;
+    font-family: "NotoSansKR_m";
+    font-weight: 500;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    height : auto; /*(대신 height를 설정해준다. 텍스트 크기에 맞춰 height가 1줄인 경우를 생각하자.) */
+    word-wrap : brek-word;
+    display : -webkit-box;
+    -webkit-line-clamp : 1; /*(줄 개수를 설정한다. 만약 2줄이상이라면 height와 해당 값을 수정한다.) */
+    -webkit-box-orient: vertical;
+  }
+  .pr_buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .pr_buttons button{
+    font-size: 2.0rem;
+  }
+  .completeSale_btn{
+    margin-left: 20px;
+  }
+.checkSale_line{
+  font-size: 2.0rem;
+  color: #3b3b3b;
+}
+.productPrice_line{
+  font-size: 2.5rem;
+  color: #3b3b3b;
+}
+.productRecommendation_line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.0rem;
+  color: #3b3b3b;
+}
+  .pr_starcount{
+    display: flex;
+    align-items: center;
+  }
+  .pr_starcount img{
+    margin-right:0.5rem;
+  }
+  .pr_station{
+
+  }
+
+  #empty_page{
+    height: 60.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+  }
+  #empty_page h4{
+    font-family: "NotoSansKR_r";
+    color: #707070;
+  }
+  #empty_page p{
+    font-family: "NotoSansKR_r";
+    text-align: center;
+    color: #707070;
+  }
+  #empty_page p span{
+    font-family: "NotoSansKR_m";
+    color: #3b3b3b;
+    font-weight: 500;
+  }
+
+#pagenation_box{
+  text-align: center;
+  width: 100%;
+  margin: 3.0rem 0;
+  font-family: "NotoSansKR_m";
+  font-size: 2.0rem;
+}
+#pagenation_box a{text-decoration: none;display: inline-block;width: 3.0rem;height: 3.0rem;}
+#pagenation_box a::before{color: white;}
+#pagenation_box a:focus,#pagenation_box a:hover { color: white!important; background-color:#0088ff!important;border-radius: 10rem;}
+
+.hidden{
+  display: none;
+}
+.w3-teal{
+  color: #3b3b3b!important;
+  background-color: #f2f2f2!important;
+}
+.h3{color:#3b3b3b; font-family: "NotoSansKR_m";font-size: 3.0rem;font-weight: 500;}
+.clear{clear:both;}
+
+@media only screen and (max-width: 1024px) {
+  html,body{font-size: 9px!important;}
+}
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 8px!important;}
+  .productInfo_part_img .img_box{
+    width: 14.0rem;
+    height: 14.0rem;
+    min-height: 14.0rem;
+    min-width: 14.0rem;
+  }
+  /* .pr_buttons{width: 100%;justify-content:flex-end;} */
+}
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 7px!important;}
+  .w3-container{padding:5.0rem 3.0rem;}
+  .productInfo_part_text {margin-left:3.0rem}
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (max-width: 360px) {
+  html,body{font-size: 6px!important;}
+}

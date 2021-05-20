@@ -1,0 +1,225 @@
+Reset CSS
+* { box-sizing: border-box; }
+li, ul { list-style: none; }
+a { text-decoration: none; }
+html{ font-size: 10px !important; }
+a:visited{
+  color: #222;
+}
+/* Default CSS */
+body {
+  color: #222;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #F0F0F0;
+  overflow-y:hidden;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4.1fr 1.2fr;
+  grid-template-rows: 70px calc(100vh - 70px);
+  grid-template-areas:'menu header header''menu content content';
+}
+
+.m-gnb {
+  display: none;
+}
+
+.header {
+  grid-area: header;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.21%;
+  padding-right: 7.07%;
+  line-height: 70px;
+}
+
+.header > div {
+  color: #2e2e2e;
+  font-size: 2.5rem;
+}
+
+.header > ul > li {
+  color: #5b5b5b;
+  float: left;
+  margin-left: 50px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #353535;
+  padding-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.menu div:nth-child(1), .menu div:nth-child(2) {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.menu div:nth-child(2) {
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+}
+
+.menu1 {
+  padding-bottom: 20px;
+}
+
+#ac {
+  padding-left: 0;
+}
+
+#ac .menu2 {
+  display: none;
+  padding-left: 10px;
+}
+
+#ac .menu2 > li {
+  padding-top: 10px;
+}
+
+.menu1 a {
+  color: #fff;
+}
+
+.content {
+  grid-area: content;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: 70px 100vh;
+    grid-template-areas: 'header''content';
+    grid-column-gap: 30px;
+  }
+
+  .header {
+    padding-left: 70px;
+    position: fixed;
+    width: 100vw;
+    justify-content: flex-start;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.349);
+  }
+
+  .header > div {
+    font-size: 2.0rem;
+  }
+
+  .header > ul > li {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  /* menu */
+  .menu {
+    display: none;
+  }
+
+  .m-menu div:nth-child(1), .m-menu div:nth-child(2) {
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .m-menu div:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .m-gnb {
+    display: block;
+    background-color: #353535;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+  }
+
+  .m-gnb.active {
+    left: 0px;
+  }
+
+  .m-menu {
+    line-height: 25px;
+    margin-top: 90px;
+  }
+
+  .m-menu a {
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: fixed;
+    left: 20px;
+    top: 28px;
+  }
+
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #353535;
+    transition: 0.5s;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+
+  .trigger span:nth-child(3) {
+    top: 100%
+  }
+
+  .trigger.active span {
+    background-color: #fff;
+  }
+
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg)
+  }
+
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg)
+  }
+}

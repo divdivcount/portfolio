@@ -1,0 +1,106 @@
+.container{
+  margin: 1.0rem auto 0 auto;
+  width:55%;
+}
+.login-box{
+  width:100%;
+  text-align: center;
+  color: #a7a7a7;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 2.0rem;
+  color:#3b3b3b;
+  padding: 10px 0;
+  margin: 12px 0;
+  border-bottom: 2px solid #a7a7a7;
+}
+.textbox input{
+  font-family: "NotoSansKR_m";
+  border: none;
+  outline: none;
+  background: none;
+  color: #3b3b3b;
+  font-size: 1.8rem;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.textbox input::placeholder{
+  font-family: "NotoSansKR_m";
+  color: #d4d4d4;
+}
+.text_center{
+  color: #a7a7a7;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 12px auto 0 auto;
+  font-family: "NotoSansKR_r";
+}
+.line  {
+  width: 40%;
+  height: 2px;
+  margin:0px;
+  background-color: #a7a7a7;
+}
+.clear{
+  clear:both;
+}
+#login {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 2.3em;
+  font-family: "NotoSansKR_m";
+}
+#loginbtn{
+  width: 100%;
+  color:#ffffff;
+  font-family: "NotoSansKR_m";
+  font-size: 1.8rem;
+  background: linear-gradient(to left, #bca8ff, #0090ff);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.8rem 0;
+}
+.submitBtn{
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+#boundarybox {
+  margin:12px 0 12px 0;
+  align-items: center;
+  display:flex;
+  font-family: "NotoSansKR_r";
+}
+#logoimg_box{
+  width: 100%;
+  text-align: center;
+  z-index: 10003;
+}
+#logoimg_box img{
+  width: 100%;
+}
+#imgbox {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#imgbox img{
+  margin:  0 0.5rem 0 0.5rem;
+}
+input::placeholder{
+  color:#a7a7a7;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1024px) {
+  .container{width:55%;}
+}
+@media only screen and (max-width: 768px) {
+  .container{width: 65%;}
+}
+@media only screen and (max-width: 540px) {
+  .container{width: 75%;}
+}

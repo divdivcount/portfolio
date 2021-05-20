@@ -1,0 +1,146 @@
+html, body {font-size: 10px;}
+body{
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  background-color:#f0f0f0;
+  position: relative;
+}
+.login-box{
+  width: 42%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-top: 50px;
+  transform:translate(-50%,-50%);
+  color: #a7a7a7;
+}
+#inputbox input[type=text]{background-color:none;}
+.imgbox {
+  text-align: center;
+}
+#inputbox {
+  width: 400px;
+  margin: auto;
+}
+#boundarybox {
+  width:100%;
+  text-align: center;
+  margin:12px 0 12px 0;
+  align-items: center;
+  display:flex;
+}
+#fitst_email {
+  width:30%
+}
+#second_email {
+  width:25%
+}
+#id_check {
+  font-family: "NotoSansKR_m";
+  color: #a7a7a7;
+  font-size: 1.5rem;
+}
+.textbox{
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 30px 0;
+  border-bottom: 1px solid #a7a7a7;
+}
+.textbox input{
+  font-family:"NotoSansKR_m";
+  border: none;
+  outline: none;
+  background: none;
+  color: #3b3b3b;
+  font-size: 1.8rem;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.textbox input::placeholder{
+  font-family:"NotoSansKR_m";
+  color: #a7a7a7;
+  font-size: 1.8rem;
+}
+.textbox select{
+  font-family:'NotoSansKR_r';
+  width: 30%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #a7a7a7;
+  font-size: 1.5rem;
+  float: left;
+  border-left: solid 1px #a7a7a7;
+  padding-left: 5px;
+}
+.line  {
+  width: 30%;
+  height: 2px;
+  margin:0px;
+  background-color: #a7a7a7;
+}
+.tite_1{
+  width: 40%;
+  font-family: "NotoSansKR_m";
+  font-size:2.3rem;
+  color:#6d6d6d ;
+}
+.submitBtn_box{
+  text-align: center;
+  margin-top: 5.0rem;
+}
+.submitBtn{
+  width: 100%;
+  max-width: 400px;
+  height: 5.0rem;
+ color:#ffffff;
+ font-family: "NotoSansKR_m";
+ font-size: 1.8rem;
+ background: linear-gradient(to left, #bca8ff, #0090ff);
+ outline: none;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .login-box{width:60%;}
+  #inputbox{width: 70%;}
+}
+@media only screen and (max-width: 1024px) {
+  .login-box{width:70%;}
+  #inputbox{width: 80%;}
+}
+
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 9px;}
+  .login-box{width: 80%;}
+  #inputbox {width: 100%;}
+}
+
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 8px;}
+  #boundarybox{ font-size:1.1em;}
+  .line{width: 20%}
+  .tite_1{width: 60%}
+  .imgbox img{    width: 100%;  }
+  .imgbox input{    width: 100%;  }
+  #fitst_email {width:40%}
+  #second_email {width:35%}
+  .textbox select{display: none;}
+}
+@media only screen and (max-width: 425px) {
+  html,body{font-size: 7px;}
+}
+@media only screen and (max-width: 360px) {
+  html,body{font-size: 6px;}
+}

@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+@font-face {
+   font-family: "NotoSansKR_m";
+   src: url("../font/NotoSansKR-Medium.otf");
+}
+@font-face {
+   font-family: "NotoSansKR_b";
+   src: url("../font/NotoSansKR-Bold.otf");
+}
+@font-face {
+   font-family: "NotoSansKR_r";
+   src: url("../font/NotoSansKR-Regular.otf");
+}
+@font-face {
+   font-family: "NotoSansKR_t";
+   src: url("../font/NotoSansKR-Thin.otf");
+}

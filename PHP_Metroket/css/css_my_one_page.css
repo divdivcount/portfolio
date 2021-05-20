@@ -1,0 +1,367 @@
+html,body{font-size: 10px!important;font-family:"NotoSansKR_r"}
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  position: relative;
+  font-family: "NotoSansKR_r";
+}
+#wrapPage{
+  width:100%;
+  background-color:#f0f0f0;
+}
+.w3-content {
+    width: 71%!important;
+    max-width: none!important;
+    margin-bottom: 10.0rem;
+}
+.w3-container{
+  padding: 0!important;
+}
+.profile_box{
+  text-align: center;
+  margin-top: 7.5rem;
+}
+.profile_box .user_name{
+  margin-top: 2.4rem;
+  font-size: 3.0rem;
+}
+.prfileImg_box{
+  margin: 0 auto;
+  width: 16.0rem;
+  height: 16.0rem;
+  position: relative;
+}
+.prfileImg_box .w3-circle {
+  width: 100%;
+  height: 100%;
+}
+.prfileImg_box .open_updateImage_btn {
+  width: 5.6rem;
+  height: 5.6rem;
+  cursor: pointer;
+}
+.mainBtn_box{
+  display: flex;
+  justify-content: space-between;
+  margin: 5.0rem 0;
+  font-family: "NotoSansKR_r";
+}
+.mainBtn_box .w3-button{
+  width: 22%;
+  color:#5e5956;
+  font-size: 1.8rem;
+  padding: 1.8rem 0;
+  background-color: #e6e6e6;
+  outline: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.mainBtn_box .w3-button:hover{
+   background-color: white!important;
+   color:#5e5956!important;
+ }
+.mainBtn_box .w3-button:nth-child(1){
+  background: WHITE;
+}
+
+.main_frame{
+  overflow-y: hidden;
+}
+
+/* 모달 팝업  */
+.my_one_page_modal {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.my_one_page_modal .bg {
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.6);
+ z-index: 10000;
+}
+.my_one_page_modal .bg .fix_page{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ z-index: 10001
+}
+/* 이미지 업로드 모달박스  */
+.updateImage_modalBox {
+ position: absolute;
+ background-color: #fff;
+ width: 80%;
+ max-width: 450px;
+ height: auto;
+ /* max-height: 80%;
+ min-height: 650px; */
+ padding: 3.5rem 3.0rem 5.0rem 3.0rem;
+ z-index: 10002;
+
+ display: flex;
+ flex-direction: column;
+}
+.closeBtn_box {
+ display: flex;
+ justify-content: flex-end;
+}
+.closeBtn{cursor: pointer;}
+
+.updateImage_modalBox h3{
+  width: 100%;
+  font-family: "NotoSansKR_m";
+  font-size: 3.0rem;
+  font-weight: 500;
+  color: #110e0c;
+  text-align: left;
+  margin: 0;
+}
+.updateImage_modalBox p{
+  width: 100%;
+  font-family: "NotoSansKR_r";
+  font-size: 2.0rem;
+  text-align: left;
+  color: #707070;
+  margin: 0;
+  margin-top: 0.6rem;
+  margin-bottom: 3.0rem;
+}
+.changedProfile_image{
+  margin: 0 auto;
+  width: 21.0rem;
+  height: 21.0rem;
+  text-align: center;
+}
+.changedProfile_image img{
+  height: 100%;
+  width: 100%;
+}
+.updateImage_Button_Line{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3.5rem 0;
+}
+.updateImage_Button_Line button{font-family: "NotoSansKR_r";font-size: 2.0rem;height: 5.0rem;color: #3b3b3b;border: none;outline: none;}
+.updateImage_Button_Line button:nth-child(1){width: 60%;}
+.updateImage_Button_Line button:nth-child(2){width: 35%;}
+.modalBox span{
+  font-family: "NotoSansKR_r";
+  font-size: 1.8rem;
+  text-align: left;
+  color: #3b3b3b;
+}
+.inputNicname_Line{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #707070;
+  align-items: center;
+}
+.inputNicname_Line img{
+  width: 10px;
+  height: 10px;
+}
+.inputNicname_Line input{
+  width: 80%;
+  outline: none;
+  border: none;
+  overflow:auto;
+  font-family: "NotoSansKR_r";
+  font-size: 2.3rem;
+  color: #a8a8a8;
+}
+.updateProfile_Button_Line{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4.0rem;
+}
+.updateProfile_Button_Line input {
+  width: 45%;
+  font-family: "NotoSansKR_r";
+  font-size: 2.0rem;
+  height: 5.0rem;
+  border: none;outline: none;
+}
+
+/* 역선택 모달팝업 */
+.selectStation_modalBox {
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  max-width: 1500px;
+  height: auto;
+  padding: 15px;
+  z-index: 10002;
+  box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+}
+#selectMetro_box{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.0rem 2.0rem;
+  z-index: 1;
+  font-family: "NotoSansKR_r";
+  font-size:2.3rem;
+}
+
+#selectMetro_box .title_line{width: 100%;display: flex;justify-content: flex-end;}
+#selectMetro_box .input_line{display: flex;justify-content: space-between;height: 80%;align-items: center;}
+#selectMetro_box span{font-size:1.8rem;color: #a1a1a1;}
+#selectMetro_box .find_item{width: 45%;border-bottom: 3px solid #a5a5a5;}
+#selectMetro_box .w3-button{width:20%;height: 7.0rem;font-family: "NotoSansKR_r";}
+#selectMetro_box .w3-input{outline: none;background-color:#f9f9f9!important;border: none;}
+#selectMetro_box .w3-select{outline: none;background-color:#f9f9f9!important;border: none;}
+#selectMetro_box .find_item:nth-child(1){}
+#selectMetro_box #bothFind_item{display: flex;width: 75%;flex-direction: row;justify-content: space-between;align-items: center;}
+
+.ui-autocomplete{z-index: 10010!important}
+
+
+/* 구매자 설정 후 판매완료 모달팝업 */
+.selectBuyer_modalBox{
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  padding: 15px;
+  box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+}
+.selectBuyer_modalBox .img_box{
+  width: 100%;
+  text-align: center;
+}
+.selectBuyer_modalBox .img_box img{
+  width: 7.0rem;
+  height: 7.0rem;
+}
+.selectBuyer_modalBox h3{
+  width: 100%;
+  color: #3d3d3d;
+  font-family: "NotoSansKR_m";
+  font-size: 2.0rem;
+  text-align: center;
+  margin: 1.0rem 0;
+}
+.selectBuyer_modalBox p{
+  width: 100%;
+  color: #7d7d7d;
+  font-family: "NotoSansKR_r";
+  font-size: 2.0rem;
+  text-align: center;
+}
+#selectBuyer_selectBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#selectBuyer_selectBox .img_box{
+  width: 100%;
+  text-align: center;
+}
+#selectBuyer_selectBox .img_box img{
+  width: 6.0rem;
+  height: 6.0rem;
+}
+#selectBuyer_selectBox p{
+  margin-bottom: 3.0rem;
+}
+#selectBuyer_selectBox .w3-select{
+  width: 65%;
+  min-width: 200px;
+  margin: 0 auto 5.0rem;
+  color: #7d7d7d;
+  font-family: "NotoSansKR_r";
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #a7a7a7;
+}
+.selectBuyer_btnBox {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.0rem;
+}
+.selectBuyer_btnBox .w3-button{
+  padding: 0.8rem 1.6rem;
+  width: 18.0rem;
+  font-family: "NotoSansKR_r";
+  font-size: 1.5rem;
+}
+
+/*판매수정하는 모달 팝업 */
+.changeBuyer_modalBox {
+  max-width:600px;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  background-color: #fff;
+  border-top-left-radius: : 20px;
+  border-top-right-radius: : 20px;
+  background-color: #ffffff;
+}
+.changeBuyer_imgBox{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  height: auto;
+  padding-top: 3.0rem;
+  text-align: center;
+  background-color: #0099ff;
+}
+.changeBuyer_contentBox{
+  width: 100%;
+  height: auto;
+  padding: 3.0rem 0;
+  text-align: center;
+}
+.changeBuyer_contentBox h3{font-family: "NotoSansKR_m";font-size: 2.0rem;color: #1d1d1d;margin: 0;padding: 0;}
+.changeBuyer_contentBox p{font-family: "NotoSansKR_r";font-size: 2.0rem;color: #7d7d7d;margin-top: 1.0rem}
+.changeBuyer_btnLine{width: 100%;display: flex;justify-content:center;;margin-top:4.0rem; }
+  .changeBuyer_btnLine .w3-button{padding: 1.0rem 4.5rem;color:white!important;font-family: "NotoSansKR_r";font-size: 1.5rem;margin: 0 4.0rem}
+
+
+.blue{color: blue;}
+.hidden {display: none!important}
+@media only screen and (min-width: 1920px) {
+  body{
+    width: 1920px;
+    margin: 0 auto!important;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .w3-content {width: 80%!important;}
+}
+@media only screen and (max-width: 1024px) {
+  html,body{font-size: 9px!important;}
+  .w3-content {width: 85%!important;}
+  .input_line{flex-direction:column;}
+  #selectMetro_box .w3-button{margin-top: 3.0rem;width: 30%;}
+}
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 8px!important;}
+  .w3-content {width: 90%!important;}
+  #userInfo_box{width: 100%;}
+}
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 7px!important;}
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (max-width: 360px) {
+  html,body{font-size: 6px!important;}
+}

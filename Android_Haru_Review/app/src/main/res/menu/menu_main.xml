@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item android:title="Item"
+        android:icon="@drawable/w_overflow"
+        android:id="@+id/action_settings"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/add_plus"
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/w_add_plus">
+    </item>
+
+</menu>

@@ -1,0 +1,321 @@
+html,body{font-size: 10px!important;}
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  font-family: "NotoSansKR_r";
+  position: relative;
+}
+#wrapPage{
+  width:100%;
+  background-color:#f0f0f0;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+#wrapContainer_Box{
+  margin: 0 auto;
+  width: 65%;
+}
+
+#pageTitle_box{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10.0rem 0;
+}
+#pageTitle_box h2{font-size: 4.5rem;color: #3b3b3b;font-family: "NotoSansKR_m"}
+#pageTitle_box span{font-size: 1.6rem;color: #0099ff;}
+
+#search_box{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem auto;
+}
+.search_icon{}
+.search_icon input{width: 100%;height:100%}
+
+#search_box #search_TextPart{
+  margin-right: 1.0rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.16);
+  font-size: 1.4rem;
+}
+#search_box #search_TextPart select{width: 30%;outline: none;border: none;padding: 0;border-right: #5b5b5b solid 1px;margin:1.0rem;margin-right: 0;padding-right: 1.0rem;color:#707070}
+#search_box #search_TextPart select::before,select:focus{outline: none;}
+#search_box #search_TextPart input {width: 70%;outline: none;border: none;margin:2.0rem;margin-left: 0;padding-left: 1.0rem;}
+#selectedStation{
+  width: 100%;
+  text-align: center;
+  font-size: 2.0rem;
+  color: #3b3b3b;
+}
+
+#selectMetro_box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3.0rem 2.0rem;
+  z-index: 1;
+  font-family: "NotoSansKR_r";
+  font-size:2.3rem;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+
+#selectMetro_box .title_line{width: 100%;display: flex;justify-content: flex-end;}
+#selectMetro_box .input_line{display: flex;justify-content: space-between;height: 80%;align-items: center;}
+#selectMetro_box span{font-size:1.8rem;color: #a1a1a1;}
+#selectMetro_box .find_item{width: 45%;border-bottom: 3px solid #a5a5a5;}
+#selectMetro_box .w3-button{width:20%;height: 7.0rem;font-family: "NotoSansKR_r";}
+#selectMetro_box .w3-input{outline: none;background-color:#f9f9f9!important;border: none;}
+#selectMetro_box .w3-select{outline: none;background-color:#f9f9f9!important;border: none;}
+#selectMetro_box .find_item:nth-child(1){}
+#selectMetro_box #bothFind_item{display: flex;width: 75%;flex-direction: row;justify-content: space-between;align-items: center;margin: 0 auto}
+
+.ui-autocomplete{z-index: 10010!important}
+
+.closeBtn_box_2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.closeBtn_2{cursor: pointer;}
+
+
+
+.modal_2 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.modal_2 .bg {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 10000;
+}
+.test_modal_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10001
+}
+.modalBox_2 {
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  max-width: 1500px;
+  height: auto;
+  padding: 15px;
+  z-index: 10002;
+  background-color: #f9f9f9;
+  box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 30px;
+}
+.hidden{
+  display: none;
+}
+
+
+
+
+
+.btn_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn_box .w3-button{ width: 180px;background-color: #e5e6e7;font-size: 2.0rem;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+#productTitle{
+  display: flex;
+  font-family: "NotoSansKR_m";
+  font-size: 2.6rem;
+  color: #5b5b5b;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line  {
+  width: 25%;
+  height: 2px;
+  margin:0px;
+  background-color: #5b5b5b;
+}
+
+#productGrid_box{
+  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-row-gap:5.0rem;
+  grid-column-gap:1.0rem;
+  grid-template-columns: repeat(4,1fr);
+}
+
+/* info 박스아래 img박스및 test 박스가 있음 */
+.productInfo_box{
+  margin: 0 auto;
+  width: 260px;
+  height: 400px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba( 0, 0, 0, 0.5 );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-top-right-radius: 3.0rem;
+  border-top-left-radius: 3.0rem;
+}
+#overlay span{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "NotoSansKR_r";
+  font-size: 2.0rem;
+}
+.productInfo_box .productImg_box{
+  width: 100%;
+  height: 65%;
+  position: relative;
+}
+.productInfo_box .productImg_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-top-right-radius: 3.0rem;
+  border-top-left-radius: 3.0rem;
+}
+
+
+.productText_box{width: 100%;height:29%;display: flex;flex-direction: column;margin-top: 5px;padding: 1.0rem;background-color: white;box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);border-bottom-left-radius: 10px;border-bottom-right-radius: 10px}
+.productText_box_title_line{width: 100%;font-family: "NotoSansKR_m";font-size: 1.3rem;color: #5b5b5b;overflow : hidden;
+text-overflow : ellipsis;
+height : 1.9rem; /*(대신 height를 설정해준다. 텍스트 크기에 맞춰 height가 1줄인 경우를 생각하자.) */
+min-height: 15px;
+word-wrap : brek-word;
+display : -webkit-box;
+-webkit-line-clamp : 1; /*(줄 개수를 설정한다. 만약 2줄이상이라면 height와 해당 값을 수정한다.) */
+-webkit-box-orient: vertical;}
+.productText_box_price_line{width: 100%;font-family: "NotoSansKR_m";font-size: 1.3rem;color: #5b5b5b;overflow : hidden;
+text-overflow : ellipsis;
+height : 1.9rem; /*(대신 height를 설정해준다. 텍스트 크기에 맞춰 height가 1줄인 경우를 생각하자.) */
+min-height: 15px;
+word-wrap : brek-word;
+display : -webkit-box;
+-webkit-line-clamp : 1; /*(줄 개수를 설정한다. 만약 2줄이상이라면 height와 해당 값을 수정한다.) */
+-webkit-box-orient: vertical;}
+.productText_box_station_line{width: 100%;font-family: "NotoSansKR_r";font-size: 1.0rem;color: #5e5956;
+overflow : hidden;
+text-overflow : ellipsis;
+height : 1.9rem; /*(대신 height를 설정해준다. 텍스트 크기에 맞춰 height가 1줄인 경우를 생각하자.) */
+min-height: 15px;
+word-wrap : brek-word;
+display : -webkit-box;
+-webkit-line-clamp : 1; /*(줄 개수를 설정한다. 만약 2줄이상이라면 height와 해당 값을 수정한다.) */
+-webkit-box-orient: vertical;}
+.productText_box_category_line{width: 100%;display: flex;justify-content: space-between;
+  overflow : hidden;
+  text-overflow : ellipsis;
+  height : 1.5rem; /*(대신 height를 설정해준다. 텍스트 크기에 맞춰 height가 1줄인 경우를 생각하자.) */
+  min-height: 15px;
+  word-wrap : brek-word;
+  display : -webkit-box;
+  -webkit-line-clamp : 1; /*(줄 개수를 설정한다. 만약 2줄이상이라면 height와 해당 값을 수정한다.) */
+  -webkit-box-orient: vertical;}
+.productText_box_category_line span{font-family: "NotoSansKR_t";font-size: 0.8rem;color: #7d7d7d;}
+
+#pagination{
+  width: 100%;
+  text-align: center;
+  font-family: "NotoSansKR_m";
+  font-size: 2.0rem;
+  color: #5e5956;
+}
+#pagination ul{display:flex;justify-content: center;}
+#pagination a{display: inline-block;width: 3.0rem;height: 3.0rem;}
+#pagination a::before{color: #5e5956;}
+#pagination a:focus,#pagination a:hover { color: white; background-color:#0088ff;border-radius: 10rem;}
+
+
+
+/*  */
+
+
+
+
+  @media only screen and (min-width: 1920px) {
+    #wrapPage{
+      width: 1920px;
+      margin: 0 auto!important;
+    }
+  }
+  @media only screen and (max-width: 1700px) {
+    #wrapContainer_Box{width: 75%;}
+  }
+  @media only screen and (max-width: 1440px) {
+    html,body{font-size: 9px!important;}
+    #wrapContainer_Box{width: 85%;}
+    #productTitle{ width: 65%;}
+    .productInfo_box{width: 208px;height: 320px;}
+  }
+  @media only screen and (max-width: 1024px) {
+    html,body{font-size: 9px!important;}
+    #selectMetro_box{flex-direction:column;}
+    #selectMetro_box .w3-button{margin-top: 3.0rem;width: 30%;}
+    #productTitle{ width: 75%;}
+    #productGrid_box{grid-template-columns: repeat(3,1fr);}
+    .productInfo_box{}
+  }
+  @media only screen and (max-width: 768px) {
+    html,body{font-size: 8px!important;}
+    #wrapContainer_Box{width: 90%;}
+    #productTitle{ width: 85%;}
+    .search_icon{width: 45px;height:45px}
+    .productInfo_box{width: 156px;height: 240px;}
+  }
+  @media only screen and (max-width: 540px) {
+    html,body{font-size: 7px!important;}
+    #productTitle{ width: 100%;}
+    .productInfo_box{width: 115px;height: 200px;}
+    .productInfo_box .productImg_box{height: 57.5%}
+    .productInfo_box .productText_box{height: 40%}
+    .line  {width: 20%;}
+  @media only screen and (max-width: 425px) {
+    html,body{font-size: 7px!important;}
+    .productInfo_box{width: 95px;height: 190px;}
+    .productInfo_box .productImg_box{height: 50%}
+    .productInfo_box .productText_box{height: 49%}
+  }
+  @media only screen and (max-width: 375px) {
+    html,body{font-size: 6px!important;}
+  }
+  @media only screen and (max-width: 320px) {
+    html,body{font-size: 5px!important;}
+    .productInfo_box{width: 130px;height: 200px;}
+  }

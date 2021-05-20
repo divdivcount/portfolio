@@ -1,0 +1,60 @@
+.w3-container{background-color: #fff;padding: 5.0rem 5.0rem!important;}
+.w3-container .h3{font-size: 3.0rem; font-family: "NotoSansKR_r";margin-bottom: 3.0rem;}
+.button_contatiner_margin{padding: 5.0rem 0;font-size: 2.0rem;}
+.button_contatiner_margin .w3-button{width: 18.0rem; font-family: "NotoSansKR_r";font-size: 1.3rem}
+
+#userInfo_box{
+  font-family: "NotoSansKR_r";
+  font-size: 2.3rem;
+  width: 85%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: minmax(200px ,30%) minmax(250px,1fr);
+  grid-row-gap:2.5rem;
+  justify-content: flex-end;
+}
+
+.input_id ,.input_name, .input_email,.input_password,.input_new_password,.input_new_exisit_password{
+  width: 100%;
+  max-width: 400px;
+}
+
+#station {width: 100%;display: flex;}
+#station input[type=text]{max-width: 300px;width: 70%;}
+#station input[type=button]{font-size:1.5rem;color: #5e5956;min-width: 80px;height: auto;}
+
+.input_id{border:none;}
+.input_name{border:none;}
+.input_email{border:none;}
+.input_password{border:none; border-bottom: 1px solid;}
+.input_new_password{border:none; border-bottom: 1px solid;}
+.input_new_exisit_password{border: none; border-bottom: 1px solid;}
+.input_station{border: none; border-bottom: 1px solid;}
+.img_center{width:100%; text-align: center;}
+
+@media only screen and (min-width: 1920px) {
+}
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 1024px) {
+  html,body{font-size: 9px!important;}
+}
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 8px!important;}
+  #userInfo_box{width: 100%;}
+}
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 7px!important;}
+  #userInfo_box{grid-template-columns: 40% 60%;}
+}
+@media only screen and (max-width: 425px) {
+  .w3-container{background-color: #fff;padding: 3.0rem 3.0rem!important;}
+  #userInfo_box{grid-template-columns: 45% 55%;}
+  #station {flex-direction: column;}
+  #station input[type=text]{max-width: 300px;width: 100%;}
+  #station input[type=button]{max-width: 100px;margin: 2.0rem 0 0 auto ;}
+}
+@media only screen and (max-width: 360px) {
+  html,body{font-size: 6px!important;}
+  .button_contatiner_margin .w3-button{width: 18rem}
+}

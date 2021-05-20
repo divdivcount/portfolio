@@ -1,0 +1,282 @@
+/* Reset CSS */
+* { box-sizing: border-box; }
+ul, li { list-style: none; padding: 0; }
+a { text-decoration: none; }
+body { margin: 0; }
+html { font-size: 10px !important; }
+
+.member-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 'member-content member-button' 'member-board member-board';
+    grid-template-columns: 2.45fr 1fr;
+    grid-template-rows: 1fr 2.67fr;
+    grid-gap: 30px;
+}
+
+/* content CSS */
+.member-content {
+    grid-area: member-content;
+    width: 87%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+    padding: 35px;
+    padding-right: 0px;
+    position: relative;
+    justify-self: end;
+}
+
+.member-content img {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+
+.content-info {
+    padding-left: 8.2%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-info ul:first-child {
+    text-align: right;
+}
+
+.content-info ul:last-child {
+    text-align: left;
+}
+
+.content-info ul li:last-child {
+    padding: 0;
+}
+
+ul, li {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+/* button CSS */
+.member-button {
+    width: 100%;
+    grid-area: member-button;
+    display: grid;
+    align-content: space-between;
+}
+
+.member-button input {
+    width: 67.2%;
+    background-color: #fff;
+    height: 80px;
+    color: #7B7B7B;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+    border: none;
+}
+
+/* board CSS */
+.member-board {
+  grid-area: member-board;
+  width: 82%;
+  height: 594px;
+  justify-self: center;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+
+.board-content {
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #7B7B7B;
+  margin: 0;
+  
+}
+
+.board-content p {
+  margin: 0;
+  padding: 30px 0 0 30px;
+}
+
+table {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+th {
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 3px solid #F0F0F0;
+}
+
+td {
+  padding: 20px 0;
+  border-bottom: 3px solid #F0F0F0;
+  text-align: left;
+}
+
+td:nth-child(1) {
+  width: 36%;
+}
+
+td:nth-child(2) {
+  width: 31.6%;
+}
+
+td:nth-child(3) {
+  width: 21.1%;
+}
+
+td:nth-child(4) {
+  width: 7%;
+}
+
+td:nth-child(5) {
+  width: 7%;
+}
+
+/* pagenation CSS */
+#pagenation_box a {
+    color: #5B5B5B;
+}
+
+#pagenation_box {
+  text-align: center;
+  width: 100%;
+  font-family: "NotoSansKR_m";
+  font-size: 2.0rem;
+  position: absolute;
+  margin: 2.0rem 0;
+  top: 93%;
+  transform: translateY(-93%);
+}
+
+#pagenation_box a {
+  text-decoration: none;
+  display: inline-block;
+  width: 3.0rem;
+  height: 3.0rem;
+}
+
+#pagenation_box a::before {
+  color: white;
+}
+
+#pagenation_box a:focus, #pagenation_box a:hover {
+  color: white !important;
+  background-color: #3b3b3b !important;
+  border-radius: 10rem;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+  .member-container {
+    grid-template-areas: 'member-content' 'member-button' 'member-board';
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.625fr 1fr  8.66fr;
+  }
+
+  .member-content {
+    justify-self: center;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+  }
+
+  .member-content img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  .content-info {
+    margin-left: 100px;
+    padding-left: 5%;
+  }
+
+  ul, li {
+    font-size: 1.1rem;
+  }
+
+  ul {
+    padding: 0;
+    padding-right: 5px;
+  }
+
+  .member-button {
+    width: 88%;
+    float: left;
+    grid-gap: 8.5%;
+    display: flex;
+    justify-self: center;
+  }
+
+  .member-button form {
+    width: 45.38%;
+    display: inline-block;
+
+  }
+
+  .member-button input {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .member-board {
+    width: 87%;
+    height: 396px;
+  }
+
+
+  .board-content {
+    font-size: 1.3rem;
+    
+    padding: 15px;
+  }
+
+  table {
+    position: static;
+    transform: translate(0%, 0%);
+  }
+
+  p,
+  td:nth-child(3),
+  th:nth-child(3),
+  td:nth-child(4),
+  th:nth-child(4) {
+    display: none;
+  }
+
+  td:nth-child(1),
+  td:nth-child(2) {
+    width: 25%;
+  }
+
+  th, td {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #pagenation_box {
+    position: static;
+    transform: translate(0%, 0%);
+  }
+
+  
+}
+
