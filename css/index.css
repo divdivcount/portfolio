@@ -29,7 +29,7 @@ html{font-size: 10px !important;}
                        'contact';
   grid-template-columns: 100%;
   grid-template-rows: 1.37fr 2.12fr 2.45fr 1fr;
-  grid-gap: 2.98% ;
+  /* grid-gap: 2.98% ; */
   color : #2d2d2d;
 }
 
@@ -40,67 +40,7 @@ html{font-size: 10px !important;}
   background-size: 100% 100%;
   position: relative;
 }
-#header_container{
 
-}
-#header_container > #header{
-
-  display: grid;
-  grid-template-areas: "logo nav";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 100px;
-  background-color: rgba(0,0,0,0);
-  border-bottom-right-radius:25px;
-  border-bottom-left-radius:25px;
-  font-size: 2rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-  font-weight: 500;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-
-}
-#header_container > #header > #logo{
-  grid-area: logo;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-
-
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.45;
-  letter-spacing: normal;
-  color: #6b5892;
-}
-#header_container > #header > #nav{
-  grid-area: nav;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  font-weight: bold;
-
-}
-#header_container > #header > #nav > ul li{
-  display: inline;
-  margin-left : 10px;
-}
-#header_container > #header > #nav > ul > li > a{
-  display: inline;
-  margin-left : 50px;
-  color : #fff;
-}
-#header_container > #header > #nav > ul > li > a:hover{
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #6b5892;
-  text-decoration: underline #6b5892;
-  text-underline-position: under;
-  font-weight: bold;
-
-}
 .a_hover{
   font-stretch: normal;
   font-style: normal;
@@ -254,9 +194,6 @@ h3:after {
 
 
 @media (max-width:768px) {
-  #header_container > #header{
-    display: none;
-  }
   #center_text > h1{
     font-size: 3rem;
   }
@@ -292,9 +229,6 @@ h3:after {
   }
 }
 @media (max-width:644px) {
-  #header_container > #header{
-    display: none;
-  }
   #center_text > h1{
     font-size: 3rem;
   }

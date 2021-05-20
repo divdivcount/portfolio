@@ -1,0 +1,179 @@
+/* Header */
+#header {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0 0 25px 25px;
+  font-size: 20px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.gnb-inner {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 30% 70%;
+  padding: 0 278px;
+  line-height: 100px;
+}
+
+.logo {
+  grid-area: logo;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #6b5892;
+  display: grid;
+  align-content: center;
+}
+
+.gnb {
+  float: right;
+}
+
+.menu {
+  display: none;
+}
+
+.nav {
+  grid-area: nav;
+  font-weight: bold;
+  text-align: right;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  padding-left: 50px;
+  color: #fff;
+}
+
+.nav ul li a:hover {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #6b5892;
+  text-decoration: underline #6b5892;
+  text-underline-position: under;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.trigger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #header {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
+  }
+
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  img,
+  .nav {
+    display: none;
+  }
+
+  .gnb {
+    background: #41295a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+
+  .gnb.active {
+    right: 0px;
+  }
+
+  .menu {
+    line-height: 40px;
+    margin-top: 60px;
+  }
+
+  .menu a {
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  .trigger span {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+
+  .trigger span:nth-child(3) {
+    top: 100%
+  }
+
+  .gototop.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .trigger.active span {
+    background-color: #fff;
+  }
+
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg)
+  }
+
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg)
+  }
+}
