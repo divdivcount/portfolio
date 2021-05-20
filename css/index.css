@@ -136,7 +136,107 @@ h3:after {
   color:#707070;
 }
 
+@media (max-width:1885px) {
+  #about_container{
+    grid-area : about;
+    display: grid;
+    grid-template-areas:    "abount_text abount_text"
+                            "img_container text_header";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    margin-top: 9.9%;
+  }
+  #center_text > h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  #center_text > h2{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -57%);
+    font-weight: 400;
+    font-size: 5rem;
+  }
+}
+@media (max-width:1466px) {
+  #content_container{
+    grid-template-rows: 1fr 1.2fr;
+  }
+  #about_container{
+    grid-area : about;
+    display: grid;
+    grid-template-areas:    "abount_text abount_text"
+                            "img_container text_header";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1,0.2fr 1fr);
+    margin-top: 9.9%;
+  }
+  #img_container > #img{
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+}
 
+@media (max-width:1305px) {
+  #about_container{
+    grid-area : about;
+    display: grid;
+    grid-template-areas:    "abount_text"
+                            "img_container"
+                            "text_header";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1fr;
+    margin-top: 9.9%;
+  }
+  #img_container{
+    grid-area : img_container;
+    width: 75%;
+    justify-self:center;
+  }
+  #img_container > #img{
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+  #text_container{
+      margin-top: 216px;
+    justify-self:center;
+    width: 70.3%;
+  }
+  #content_container{
+    display: grid;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-template-areas: 'about'
+                         'skills'
+                         'project'
+                         'contact';
+    grid-template-columns: 100%;
+    grid-template-rows: 1.5fr;
+    grid-gap: 2.98% ;
+    color : #2d2d2d;
+  }
+  #center_text > h2{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -57%);
+    font-weight: 400;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
 
 @media (max-width:1024px) {
   #about_container{
