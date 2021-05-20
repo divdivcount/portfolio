@@ -1,7 +1,6 @@
-# ky_project
+# Shopping web project\n
 
-#출력할떄 current_id = 0 으로 해놓고 order_id
-#if(current_id != order_id)
-#while if 문으로 같지 않으면 다른 건수 불러 올 수 있도록 한다.
+디자인 보다는 쇼핑몰의 기능에 대해 만들어본 프로젝트 입니다.
 
-# php start
+
+# 상세 기능 설명 및 구조는 파일의 기능 설명 및 구조 ppt를 확인해주시면 감사하겠습니다.
