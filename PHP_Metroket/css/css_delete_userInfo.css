@@ -1,0 +1,82 @@
+.w3-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:10.0rem 0 !important;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+
+#logoimg_box{
+  width: 100%;
+  text-align: center;
+}
+#logoimg_box img{
+  width: 300px;
+}
+.w3-container h3{
+  width: 100%;
+  margin: 0;
+  margin-top: 5.0rem;
+  text-align: center;
+  font-family: "NotoSansKR_m";
+  font-size: 3.0rem;
+  color: #3b3b3b;
+}
+.w3-container p{
+  width: 100%;
+  text-align: center;
+  margin-top: 5.0rem;
+  font-family: "NotoSansKR_m";
+  font-size: 2.5rem;
+  color: #0099ff;
+}
+#select_box{
+  width: 50%;
+  text-align: center;
+  font-size: 2.0rem;
+  margin: 0 auto;
+  margin-top: 15.0rem;
+}
+#select_box .w3-select{outline: none;}
+#btn_box{
+  margin-top: 8.0rem;
+  text-align: center;
+}
+#btn_box input{
+  border-radius: 4px;
+  width: 18rem;
+  font-size: 2.0rem;
+  font-family: "NotoSansKR_r";
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+#btn_box input[type=submit]{
+  color: #e5e6e7;
+  background-color: #5e5956;
+}
+#btn_box input[type=button]{
+  color: #949494;
+  background-color: #f0f0f0;
+  margin-left: 1.0rem;
+}
+#btn_box input[type=submit]:hover,#btn_box input[type=button]:hover{background-color:lightgray;color: black;}
+
+@media only screen and (min-width: 1920px) {
+}
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 540px) {
+}
+@media only screen and (max-width: 425px) {
+  .w3-container{}
+}
+@media only screen and (max-width: 360px) {
+  #btn_box .w3-button{width: 18rem}
+}

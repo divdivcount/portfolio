@@ -1,0 +1,107 @@
+/*-------------------------------
+*	Default dropdown styles
+--------------------------------*/
+html,body{font-size: 10px;}
+.tzSelect{
+
+	/* This is the container of the new select element */
+	width:60%!important;
+	height:34px;
+	display:flex;
+	align-items:center;
+	min-width:200px;
+	position:relative;
+	margin:5px auto 5.0rem;
+	cursor:pointer;
+	border-bottom:solid 2px #a7a7a7;
+	/* Preloading the background image for the dropdown */
+
+}
+
+.tzSelect .selectBox{
+	display: flex;
+	align-items:center;
+	padding-left:0.5rem;
+
+	height:100%;
+	width:100%;
+
+	/* Font settings */
+
+	/* font:13px/34px "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+	font-family: "NotoSansKR_r";
+	color:#7d7d7d;
+	font-size:1.5rem;
+	text-align:center;
+	text-shadow:1px 1px 0 #EEEEEE;
+
+
+	/* Using CSS3 multiple backgrounds and a fallback */
+
+	/* background:url('img/select_slice.png') repeat-x #ddd;
+	background-image:url('img/select_slice.png'),url('img/select_slice.png'),url('img/select_slice.png'),url('img/select_slice.png');
+	background-position:0 -136px, right -204px, 50% -68px, 0 0;
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat-x; */
+
+
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+.tzSelect .dropDown{
+	position:absolute;
+	top:40px;
+	left:0;
+	width:100%;
+	list-style:none;
+	z-index:1000;
+	padding: 1.0rem 2.0rem;
+	background-color:white;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+
+	-moz-box-shadow:0 0 4px #111;
+	-webkit-box-shadow:0 0 4px #111;
+	box-shadow:0 0 4px #111;
+}
+
+.tzSelect li{
+
+	cursor:pointer;
+	padding:6px;
+	text-align:center;
+}
+
+
+
+/*-----------------------------------------------------
+*	Additional styles for the apple product dropdown
+------------------------------------------------------*/
+
+
+.tzSelect .hasDetails{
+	border-width:0 1px 1px;
+}
+
+.tzSelect .hasDetails li{
+	display: flex;
+	align-items: center;
+	height:auto;
+	position:relative;
+	padding:0;
+	text-align:left;
+	margin: 1.0rem 0;
+}
+.tzSelect .hasDetails li img{
+	width: 5.0rem;
+	height: 5.0rem;
+	margin-right: 1.0rem;
+}
+.tzSelect .hasDetails li span{
+	font-family: "NotoSansKR_r";
+	color:#7d7d7d;
+	font-size:1.5rem;
+}

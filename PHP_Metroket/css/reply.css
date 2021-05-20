@@ -1,0 +1,96 @@
+/* 댓글 css */
+#reply_container{
+  width:100%;
+  margin-top:2.5rem;
+  word-break:break-all;
+  padding: 2.5rem 2.0rem 1.5rem;
+  background-color: white;
+}
+.reply_view {
+  display: flex;
+  flex-direction: column;
+}
+.reply_view h3{
+  font-size: 2.0rem;
+  color: #3b3b3b;
+  font-family: "NotoSansKR_r";
+  border-bottom: solid 1px gray;
+  margin: 0;
+  padding-bottom: 1.0rem;
+}
+.dat_view {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding:2.0rem 0 1.0rem 0;
+}
+.rep_profile{
+  display: flex;
+}
+.rep_textLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.0rem;
+}
+.dat_ins {
+  margin-top:50px;
+  border-top:dashed 1px #f0f0f0;
+}
+.replyInsert_box{
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.dat_edit_t{
+width:520px;
+height:70px;
+position: absolute;
+top: 40px;
+}
+.rep_con {
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: #f0f0f0;
+  width:100%;
+  height: 7.0rem;
+  font-size: 2.0rem;
+  color: #3b3b3b;
+  font-family: "NotoSansKR_r";
+}
+.rep_btn {
+width:100px;
+font-size:1.6rem;
+}
+.dat_view img{
+  width: 5.0rem;
+  height: 5.0rem;
+}
+.rep_textLine .member_num{
+  font-size: 2.0rem;
+  color: #3b3b3b;
+  font-family: "NotoSansKR_r";
+}
+.rep_textLine .reple_date{
+  font-size: 1.5rem;
+  color: #a7a7a7;
+  font-family: "NotoSansKR_r";
+}
+#rep_del{
+  align-self: flex-end;
+}
+#rep_del a{
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: #a7a7a7;
+  font-family: "NotoSansKR_r";
+  cursor: pointer;
+}
+.reple_text{
+  font-size: 2.0rem;
+  color: #3b3b3b;
+  font-family: "NotoSansKR_r";
+}
+.rep_submitbtn_box{width: 100%; margin: 2.0rem 0 1.5rem 0;text-align: right;}
+#check_replyCount {color: #a7a7a7;font-size: 1.5rem;text-align: right; padding: 0 2.0rem 1.0rem 0 ;}
+#check_replyCount span {color:#0099ff;}

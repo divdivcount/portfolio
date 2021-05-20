@@ -1,0 +1,106 @@
+
+#topMenu_box{
+  width: 100%;
+  height: 10.0rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+#topToolbar_box{
+  margin-right: 10%;
+  font-family: "NotoSansKR_r";
+}
+#topToolbar_box ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+#topToolbar_box li{
+  display: flex;
+  align-items: center;
+  font-family: "NotoSansKR_r";
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 2.0rem;
+  color:#707070;
+  cursor: pointer;
+}
+#topToolbar_box li img{
+  margin-right: 0.5rem;
+}
+.imgbox_1 {
+  margin-left: 10%;
+  text-align: center;
+}
+.imgbox_1 img{width: 100%}
+
+
+/* 모달 팝업  */
+.modal_header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.modal_header .bg {
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.6);
+ z-index: 10000;
+}
+.test_modal{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ z-index: 10001
+}
+.modal_header .modalBox {
+ position: absolute;
+ background-color: #fff;
+ max-width: 700px;
+ width: 80%;
+ height: 600px;
+ padding: 2.0rem;
+ z-index: 10002;
+}
+.modal_header .closeBtn_box {
+ display: flex;
+ justify-content: flex-end;
+}
+.closeBtn{cursor: pointer;}
+.hidden {
+ display: none;
+}
+
+
+
+a{text-decoration: none;}
+@media only screen and (max-width: 768px) {
+  #topToolbar_box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin:0;
+    margin-bottom: 1.0rem;
+  }
+  #topMenu_box{
+    height: auto;
+    flex-direction: column;
+  }
+  #topMenu_box .imgbox_1{
+    margin: 2.0rem auto;
+  }
+  .imgbox_1 img{width: 75%}
+  .modal_headerBox {width: 80%;height: auto;}
+}
+@media only screen and (max-height: 700px) {
+  .modalBox {height: auto;}
+}

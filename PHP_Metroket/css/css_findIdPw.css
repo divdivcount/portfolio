@@ -1,0 +1,179 @@
+html, body {font-size: 10px;}
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  background-color:#f0f0f0;
+  position: relative;
+}
+.form-wrap {
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+/* #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:#F6FEC1;
+    border:solid 2px #ff00ff;
+    border-bottom: none;
+    color: #0000ff;
+     transition: .5s;
+}*/
+.input-group {
+    height: 350px;
+    position: absolute;
+    left:50%;
+    top:400px;
+    transform:translate(-50%,-50%);
+    margin: auto;
+    width: 80%;
+}
+.input-field_2 {
+    width: 83%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.bluedot{
+  color: #00b3ff;
+  margin-right: 5px;
+}
+.inputbox{
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+}
+.inputbox input{
+  font-family: "NotoSansKR_m";
+  font-size: 1.8rem;
+  color: #3b3b3b;
+}
+.textbox{
+  font-family: "NotoSansKR_m";
+  margin-top:5px;
+  width: 20%;
+  display: flex;
+  font-size: 2.3rem;
+  color: #3b3b3b;
+  text-align: right;
+}
+.input-field {
+    width: 80%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.checkbox {
+    margin: 30px 10px 30px 0;
+}
+.imgbox{
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.submitBtn_box{
+  text-align: center;
+  margin-top: 5.0rem;
+}
+.submitBtn{
+  width: 100%;
+  max-width: 400px;
+  height: 5.0rem;
+ color:#ffffff;
+ font-family: "NotoSansKR_m";
+ font-size: 1.8rem;
+ background: linear-gradient(to left, #bca8ff, #0090ff);
+ outline: none;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
+}
+#imgbtn_box {
+  display: flex;
+}
+#imgbtn_box img{
+  width: 400px;
+}
+#findId{visibility:visible;}
+#findPw{visibility:hidden;}
+#findid_btn{cursor:pointer;}
+#findpw_btn{cursor:pointer;}
+.first_email {
+  width:30%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #a7a7a7;
+  font-size: 1.8rem;
+  float: left;
+  margin: 0 10px;
+  border-bottom: 1px solid #999;
+}
+.second_email {
+  width:25%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #a7a7a7;
+  font-size: 1.8rem;
+  float: left;
+  margin: 0 10px;
+  border-bottom: 1px solid #999;
+}
+.selbox{
+  font-family: "NotoSansKR_r";
+  font-size: 1.8rem;
+  color: #a7a7a7;
+}
+ select{
+  width: 30%;
+  border: none;
+  outline: none;
+  background: none;
+  float: left;
+  border-left: solid 1px #a7a7a7;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-wrap{width:80%;}
+  #imgbtn_box img{width:50%;}
+}
+@media only screen and (max-width: 768px) {
+  html,body{font-size: 9px;}
+  .form-wrap{width:90%;}
+  .input-group {width: 90%;top:350px;}
+}
+@media only screen and (max-width: 540px) {
+  html,body{font-size: 8px;}
+  .form-wrap{width:90%;}
+  .bluedot{margin-right: 3px;}
+  .input-group {width: 100%;top:320px;}
+  .imgbox img{    width: 100%;  }
+  .imgbox input{    width: 100%;  }
+  .first_email {width:40%}
+  .second_email {width:35%;margin: 0 0 0 10px}
+  .selbox{display: none;}
+}
+@media only screen and (max-width: 425px) {
+  html,body{font-size: 7px;}
+}
+@media only screen and (max-width: 360px) {
+  html,body{font-size: 6px;}
+}
