@@ -3,7 +3,7 @@
   require_once("modules/notification.php");
   $oauth = new Oauths;
   $returnCode = $_GET["code"]; // 서버로 부터 토큰을 발급받을 수 있는 코드를 받아옵니다
-	$restAPIKey = "24c58b732b0414e7d5d850cdafc310b8"; // 본인의 REST API KEY를 입력해주세요
+	$restAPIKey = ""; // 본인의 REST API KEY를 입력해주세요
 	$callbacURI = urlencode("https://metroket.kro.kr/kakao_callback.php"); // 본인의 Call Back URL을 입력해주세요
 
     $getTokenUrl = "https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=".$restAPIKey."&redirect_uri=".$callbacURI."&code=".$returnCode;
