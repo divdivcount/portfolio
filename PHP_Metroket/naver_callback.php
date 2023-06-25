@@ -3,8 +3,8 @@
 require_once("modules/db.php");
 require_once("modules/notification.php");
 $oauth = new Oauths;
-define('NAVER_CLIENT_ID', 'qFL1MdijiIfEemYxHv9a');
-define('NAVER_CLIENT_SECRET', 'OlLqFEtna0');
+define('NAVER_CLIENT_ID', '');
+define('NAVER_CLIENT_SECRET', '');
 define('NAVER_CALLBACK_URL', 'https://metroket.kro.kr/naver_callback.php');
 if ($_SESSION['naver_state'] != $_GET['state']) {
   // 오류가 발생하였습니다. 잘못된 경로로 접근 하신것 같습니다.
