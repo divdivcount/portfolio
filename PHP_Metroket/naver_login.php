@@ -1,7 +1,7 @@
 <?php
 session_start();
 // NAVER LOGIN
- define('NAVER_CLIENT_ID', 'qFL1MdijiIfEemYxHv9a');
+ define('NAVER_CLIENT_ID', '');
  //define('NAVER_CLIENT_SECRET', '클아이언트 시크릿');
  define('NAVER_CALLBACK_URL', 'https://metroket.kro.kr/naver_callback.php');
 
